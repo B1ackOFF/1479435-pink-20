@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктор Чернов](https://up.htmlacademy.ru/adaptive/20/user/1479435).
-* Наставник: `Неизвестно`.
+* Наставник: [Елизавета Цыгвинцева](https://htmlacademy.ru/profile/ijwby).
 
 ---
 
