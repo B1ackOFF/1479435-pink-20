@@ -1,0 +1,44 @@
+.nav {
+  font-weight: $fw700;
+  color: $white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+}
+
+.nav__list {
+  @include list-reset;
+}
+
+.nav__logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: block;
+  margin-top: 22px;
+}
+
+.nav__logo-image {
+  width: 74px;
+  height: 23px;
+}
+
+.nav__toggle {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: none;
+  background-color: $white;
+  border-radius: 1px;
+  width: 50px;
+  height: 4px;
+  position: relative;
+  align-items: center;
+  margin-top: 31px;
+  box-shadow:
+  0 -8px 0 0 $white,
+  0 8px 0 0 $white;
+  justify-self: end;
+}

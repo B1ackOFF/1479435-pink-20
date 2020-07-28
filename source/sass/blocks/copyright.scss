@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark;
+}
+
+.copyright__logo-image {
+  & path {
+    fill: $black;
+  }
+
+  &:hover path {
+    fill: $pink;
+  }
+
+  &:active path {
+    fill: $black;
+    opacity: .3;
+  }
+}

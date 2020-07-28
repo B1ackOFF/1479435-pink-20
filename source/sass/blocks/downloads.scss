@@ -1,0 +1,22 @@
+.downloads {
+  background-color: $dark-grey;
+}
+
+.downloads__link {
+  display: block;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 29px;
+  width: 280px;
+  min-height: 55px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.downloads__text {
+  color: $white;
+  font-weight: $fw300;
+  font-size: 14px;
+  margin-top: 28px;
+  padding-bottom: 38px;
+}

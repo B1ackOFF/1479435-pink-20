@@ -1,0 +1,30 @@
+.menu-list {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  border-bottom: 1px solid $black;
+}
+
+.menu-list__item {
+  display: flex;
+  justify-content: center;
+  background-color: $dark;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.menu-list__link {
+  font-weight: $fw700;
+  color: $white;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  &:hover, &:focus, &:active {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: $pink-opacity;
+  }
+}

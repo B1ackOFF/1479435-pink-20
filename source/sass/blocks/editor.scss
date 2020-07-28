@@ -1,0 +1,10 @@
+.editor__filters {
+  border: none;
+}
+
+.editor__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

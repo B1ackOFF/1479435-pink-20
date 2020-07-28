@@ -1,0 +1,18 @@
+.info__heading {
+  color: $dark;
+  font-weight: $fw300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.info__list {
+  @include list-reset;
+}
+
+.info__title {
+  font-weight: $fw700;
+}
+
+.info__description {
+  font-size: 14px;
+}

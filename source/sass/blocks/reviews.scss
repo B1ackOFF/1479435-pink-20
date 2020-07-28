@@ -1,0 +1,17 @@
+.reviews__list {
+  @include list-reset;
+
+}
+
+.reviews__autor {
+  font-weight: $fw700;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark;
+}
+

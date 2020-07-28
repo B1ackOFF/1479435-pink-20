@@ -1,0 +1,62 @@
+.tariffs__heading {
+  background:$dark;
+  border: 2px solid $dark;
+  border-radius: 1px 0px 0px 0px;
+}
+
+.tariffs__title {
+  font-weight: $fw700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.tariffs__price {
+  font-weight: $fw300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.tariffs__hit {
+display: block;
+width: 86px;
+color: $white;
+background-color: $pink;
+}
+
+.tariffs {
+  border: 2px solid $white;
+  border-collapse: collapse;
+}
+
+
+.tariffs__body {
+  border: 2px solid $light-grey-2;
+  border-radius: 1px 0px 0px 0px;
+}
+
+.tariffs__heading {
+  border: 2px solid $white;
+  border-radius: 1px 0px 0px 0px;
+}
+
+.tariffs__text {
+  min-width: 276px;
+  font-size: 14px;
+  line-height: 30px;
+  background-repeat: no-repeat;
+  background-position: 228px 0;
+}
+
+.tariffs__text--yes {
+  background-image: url(../img/icon-yes-green.svg);
+
+}
+
+.tariffs__text--no {
+  background-image: url(../img/icon-no-red.svg);
+
+}
