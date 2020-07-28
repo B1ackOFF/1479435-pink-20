@@ -1,6 +1,6 @@
 .tariffs__heading {
   background: $dark;
-  border: 2px solid $dark;
+  border: 2px solid $white;
 }
 
 .tariffs__title {
@@ -35,10 +35,6 @@
   border: 2px solid $light-grey-2;
 }
 
-.tariffs__heading {
-  border: 2px solid $white;
-}
-
 .tariffs__text {
   min-width: 276px;
   font-size: 14px;
@@ -48,9 +44,9 @@
 }
 
 .tariffs__text--yes {
-  background-image: url(../img/icon-yes-green.svg);
+  background-image: url("../img/icon-yes-green.svg");
 }
 
 .tariffs__text--no {
-  background-image: url(../img/icon-no-red.svg);
+  background-image: url("../img/icon-no-red.svg");
 }
