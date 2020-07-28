@@ -1,11 +1,11 @@
 .points__button {
-border:none;
-background-color: $dark;
-width: 6px;
-height: 6px;
-border-radius: 50%;
-opacity: .3;
-position: relative;
+  border: none;
+  background-color: $dark;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.3;
+  position: relative;
 }
 
 .points__button--active {

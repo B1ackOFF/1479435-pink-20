@@ -1,7 +1,6 @@
 .tariffs__heading {
-  background:$dark;
+  background: $dark;
   border: 2px solid $dark;
-  border-radius: 1px 0px 0px 0px;
 }
 
 .tariffs__title {
@@ -21,10 +20,10 @@
 }
 
 .tariffs__hit {
-display: block;
-width: 86px;
-color: $white;
-background-color: $pink;
+  display: block;
+  width: 86px;
+  color: $white;
+  background-color: $pink;
 }
 
 .tariffs {
@@ -32,15 +31,12 @@ background-color: $pink;
   border-collapse: collapse;
 }
 
-
 .tariffs__body {
   border: 2px solid $light-grey-2;
-  border-radius: 1px 0px 0px 0px;
 }
 
 .tariffs__heading {
   border: 2px solid $white;
-  border-radius: 1px 0px 0px 0px;
 }
 
 .tariffs__text {
@@ -53,10 +49,8 @@ background-color: $pink;
 
 .tariffs__text--yes {
   background-image: url(../img/icon-yes-green.svg);
-
 }
 
 .tariffs__text--no {
   background-image: url(../img/icon-no-red.svg);
-
 }

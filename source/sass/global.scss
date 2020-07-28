@@ -38,7 +38,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
