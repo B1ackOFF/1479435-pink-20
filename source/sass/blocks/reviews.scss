@@ -3,7 +3,7 @@
 }
 
 .reviews__autor {
-  font-weight: $fw700;
+  font-weight: $additional-font-weight;
   font-style: normal;
   line-height: 30px;
 }
@@ -11,5 +11,5 @@
 .reviews__text {
   font-size: 14px;
   line-height: 24px;
-  color: $dark;
+  color: $dark-color;
 }

@@ -4,31 +4,31 @@
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $background-color-1;
 }
 
 .menu-list__item {
   display: flex;
   justify-content: center;
-  background-color: $dark;
+  background-color: $dark-color;
   box-shadow:
-    0 1px 0 $black,
+    0 1px 0 $background-color-1,
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .menu-list__link {
-  font-weight: $fw700;
-  color: $white;
+  font-weight: $additional-font-weight;
+  color: $background-color-2;
   line-height: 32px;
   text-transform: uppercase;
 
   &:hover,
   &:focus,
   &:active {
-    color: $pink;
+    color: $link-color;
   }
 
   &:active {
-    opacity: $pink-opacity;
+    opacity: $link-color-opacity;
   }
 }

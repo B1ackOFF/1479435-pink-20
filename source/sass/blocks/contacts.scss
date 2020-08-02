@@ -3,15 +3,16 @@
 }
 
 .contacts__title {
-  font-weight: $fw700;
+  font-weight: $additional-font-weight;
   font-size: 18px;
   line-height: 25px;
-  color: $dark;
+  color: $dark-color;
 }
 
 .contacts__link {
-  font-weight: $fw300;
+  font-weight: $special-font-weight;
   font-size: 24px;
+  font-style: normal;
   line-height: 33px;
-  color: $pink;
+  color: $link-color;
 }

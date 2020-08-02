@@ -1,12 +1,12 @@
 .buttons__item {
-  background-color: $white;
-  border: 3px solid $pink;
+  background-color: $background-color-2;
+  border: 3px solid $link-color;
   border-radius: 30px;
   min-width: 280px;
   min-height: 55px;
-  font-weight: $fw700;
+  font-weight: $additional-font-weight;
   font-size: 18px;
   line-height: 18px;
-  color: $pink;
+  color: $link-color;
   margin-bottom: 33px;
 }

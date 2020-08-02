@@ -1,6 +1,8 @@
 .points__button {
+  display: flex;
+  flex-shrink: 0;
   border: none;
-  background-color: $dark;
+  background-color: $dark-color;
   width: 6px;
   height: 6px;
   border-radius: 50%;

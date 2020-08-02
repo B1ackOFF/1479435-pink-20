@@ -4,6 +4,7 @@
 }
 
 .intro__background {
+  background-color: $background-color-3;
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
@@ -17,35 +18,26 @@
 
 .intro__heading {
   margin: 0;
-  font-weight: $fw300;
+  font-weight: $special-font-weight;
   font-size: 24px;
   line-height: 120%;
-  color: $white;
+  color: $background-color-2;
   width: 280px;
   padding-top: 95px;
 }
 
 .intro__title {
   margin: 0;
-  font-weight: $fw300;
+  font-weight: $special-font-weight;
   font-size: 24px;
   line-height: 33px;
-  color: $white;
+  color: $background-color-2;
   width: 280px;
   padding-top: 95px;
 }
 
-.intro--photo {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-  min-height: 462px;
-  outline: 2px solid yellowgreen;
-  outline-offset: -2px;
-}
-
-.intro--form {
+.intro--inner-page {
+  background-color: $background-color-3;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;

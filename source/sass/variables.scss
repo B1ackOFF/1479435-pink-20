@@ -1,19 +1,18 @@
 $mobile: 320px;
 $tablet: 660px;
-$desktop: 960px;
-$large-desktop: 1200px;
+$desktop: 1200px;
 
 $main-font: "Open Sans", "Arial", sans-serif;
-$fw300: 300;
-$fw400: 400;
-$fw700: 700;
+$special-font-weight: 300;
+$main-font-weight: 400;
+$additional-font-weight: 700;
 
-$pink: #d22856;
-$pink-opacity: rgba(210, 40, 86, 0.3);
-$black: #000000;
-$white: #ffffff;
-$white-opacity: rgba(255, 255, 255, 0.3);
-$dark: #283645;
-$light-grey: #f2f2f2;
-$light-grey-2: #e5e5e5;
-$dark-grey: #1d2631;
+$link-color: #d22856;
+$link-color-opacity: rgba(210, 40, 86, 0.3);
+$background-color-1: #000000;
+$background-color-2: #ffffff;
+$background-color-2-opacity: rgba(255, 255, 255, 0.3);
+$dark-color: #283645;
+$light-color: #f2f2f2;
+$light-color-2: #e5e5e5;
+$background-color-3: #1d2631;

@@ -6,20 +6,20 @@
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
-  color: $dark;
+  color: $dark-color;
 }
 
 .copyright__logo-image {
   & path {
-    fill: $black;
+    fill: $background-color-1;
   }
 
   &:hover path {
-    fill: $pink;
+    fill: $link-color;
   }
 
   &:active path {
-    fill: $black;
+    fill: $background-color-1;
     opacity: 0.3;
   }
 }
