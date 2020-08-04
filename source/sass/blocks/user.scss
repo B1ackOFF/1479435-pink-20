@@ -27,12 +27,12 @@
     color: $dark-color;
   }
 
-  &:hover{
+  &:hover {
     border: 2px solid $dark-color;
   }
 }
 
-.user__item:focus-within .user__input{
+.user__item:focus-within .user__input {
   outline: none;
   border: 2px solid $link-color;
 }

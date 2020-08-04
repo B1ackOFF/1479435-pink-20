@@ -20,8 +20,8 @@
   @include list-reset;
 }
 
-.trip__input[type=checkbox],
-.trip__input[type=radio] {
+.trip__input[type="checkbox"],
+.trip__input[type="radio"] {
   appearance: none;
 }
 
@@ -40,7 +40,7 @@
     height: 35px;
     position: absolute;
     left: -57px;
-    bottom: 0px;
+    bottom: 0;
     background-color: $background-color-2;
     border: 2px solid $light-color-2;
     border-radius: 2px;
@@ -59,17 +59,17 @@
   border: 2px solid $dark-color;
 }
 
-.trip__input[type=checkbox]:disabled + .trip__label:before,
-.trip__input[type=radio]:disabled + .trip__label:before,
-.trip__input[type=checkbox]:hover:disabled + .trip__label:before,
-.trip__input[type=radio]:hover:disabled + .trip__label:before,
-.trip__input[type=checkbox]:active:disabled + .trip__label:before,
-.trip__input[type=radio]:active:disabled + .trip__label:before {
+.trip__input[type="checkbox"]:disabled + .trip__label::before,
+.trip__input[type="radio"]:disabled + .trip__label::before,
+.trip__input[type="checkbox"]:hover:disabled + .trip__label::before,
+.trip__input[type="radio"]:hover:disabled + .trip__label::before,
+.trip__input[type="checkbox"]:active:disabled + .trip__label::before,
+.trip__input[type="radio"]:active:disabled + .trip__label::before {
   border: 2px solid $light-color-2;
-  opacity: .4;
+  opacity: 0.4;
 }
 
-.trip__input[type=checkbox]:checked + .trip__label:before {
+.trip__input[type="checkbox"]:checked + .trip__label::before {
   background-image: url("../img/form-tick.svg");
   background-position: 6px 7px;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@
   }
 }
 
-.trip__input[type=radio]:checked + .trip__label:before {
+.trip__input[type="radio"]:checked + .trip__label::before {
   background-image: url("../img/form-point.svg");
   background-position: 8px 8px;
   background-repeat: no-repeat;
