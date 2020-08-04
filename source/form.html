@@ -53,7 +53,7 @@
 
       <section class="competition">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="competition__fieldset user">
@@ -78,36 +78,36 @@
           </fieldset>
 
           <fieldset class="competition__fieldset trip">
-            <legend class="trip__legend">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="trip__legend">Ваши безбашенные&nbsp;достижения в путешествии</legend>
 
             <ul class="trip__list">
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="shark-trip" type="checkbox" name="shark-trip" checked>
+                <input class="trip__input" id="shark-trip" type="checkbox" name="shark-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="shark-trip">Сделал селфи с акулой</label>
               </li>
 
               <li class="trip__item trip__item--beach">
-                <input class="trip__input visually-hidden" id="beach-trip" type="checkbox" name="beach-trip" checked>
+                <input class="trip__input" id="beach-trip" type="checkbox" name="beach-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="beach-trip">Обгорел на пляже</label>
               </li>
 
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="norris-trip" type="checkbox" name="norris-trip">
+                <input class="trip__input" id="norris-trip" type="checkbox" name="norris-trip">
                 <label class="trip__label trip__label--checkbox" for="norris-trip">Видел Чака Норриса</label>
               </li>
 
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="souvenir-trip" type="checkbox" name="souvenir-trip">
+                <input class="trip__input" id="souvenir-trip" type="checkbox" name="souvenir-trip">
                 <label class="trip__label trip__label--checkbox" for="souvenir-trip">Накупил сувениров</label>
               </li>
 
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="tower-trip" type="checkbox" name="tower-trip" checked>
+                <input class="trip__input" id="tower-trip" type="checkbox" name="tower-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="tower-trip">Удержал башню</label>
               </li>
 
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="hotel-trip" type="checkbox" name="hotel-trip">
+                <input class="trip__input" id="hotel-trip" type="checkbox" name="hotel-trip">
                 <label class="trip__label trip__label--checkbox" for="hotel-trip">Разгромил отель</label>
               </li>
             </ul>
@@ -134,30 +134,32 @@
 
             <ul class="trip__list">
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="version-ios" type="radio" name="app-version" checked>
+                <input class="trip__input" id="version-ios" type="radio" name="app-version" checked>
                 <label class="trip__label trip__label--radio" for="version-ios">Pink для iOS</label>
               </li>
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="version-android" type="radio" name="app-version">
+                <input class="trip__input" id="version-android" type="radio" name="app-version">
                 <label class="trip__label trip__label--radio" for="version-android">Pink на Android</label>
               </li>
               <li class="trip__item">
-                <input class="trip__input visually-hidden" id="version-windows" type="radio" name="app-version">
+                <input class="trip__input" id="version-windows" type="radio" name="app-version">
                 <label class="trip__label trip__label--radio" for="version-windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="competition__fieldset user">
-            <legend class="visually-hidden">Комментарий пользователя</legend>
+            <div class="user__comment">
+              <legend class="visually-hidden">Комментарий пользователя</legend>
 
-            <textarea class="user__input" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="30" rows="10" ></textarea>
-            <label class="user__label user__label--comment" for="user-comment">Опишите свои эмоции</label>
+              <textarea class="user__input user__input--comment" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="30" rows="10"></textarea>
+              <label class="user__label user__label--comment" for="user-comment">Опишите свои эмоции</label>
+            </div>
           </fieldset>
 
           <div class="competition__footer">
-            <button class="competition__button button" type="submit">Отправить форму</button>
-            <p class="competition__text"><sup>*<sup> — обязательные поля</p>
+            <button class="competition__submit" type="submit">Отправить форму</button>
+            <p class="competition__text"><sup class="competition__sup">*</sup> — обязательные поля</p>
           </div>
         </form>
       </section>
