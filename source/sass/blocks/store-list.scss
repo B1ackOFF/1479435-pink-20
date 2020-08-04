@@ -1,0 +1,11 @@
+.store-list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  min-width: 320px;
+}
+
+.store-list__link {
+  display: block;
+}

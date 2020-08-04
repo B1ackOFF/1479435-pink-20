@@ -1,0 +1,15 @@
+.points__button {
+  display: flex;
+  flex-shrink: 0;
+  border: none;
+  background-color: $dark-color;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.3;
+  position: relative;
+}
+
+.points__button--active {
+  opacity: 1;
+}

@@ -1,0 +1,21 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin none {
+  display: none;
+}

@@ -1,0 +1,22 @@
+.downloads {
+  background-color: $background-color-3;
+}
+
+.downloads__link {
+  display: block;
+  color: $background-color-2;
+  border: 3px solid $background-color-2;
+  border-radius: 29px;
+  width: 280px;
+  min-height: 55px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.downloads__text {
+  color: $background-color-2;
+  font-weight: $special-font-weight;
+  font-size: 14px;
+  margin-top: 28px;
+  padding-bottom: 38px;
+}

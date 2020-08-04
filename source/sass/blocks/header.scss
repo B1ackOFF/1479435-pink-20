@@ -1,0 +1,22 @@
+.header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header__background {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 66px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__wrapper {
+  @include wrapper;
+}

@@ -1,0 +1,52 @@
+.post {
+  @include list-reset;
+  color: $dark-color;
+}
+
+.post__description {
+  background-color: $light-color;
+  margin: 0;
+}
+
+.post__author {
+  font-weight: $additional-font-weight;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__time {
+  font-weight: $special-font-weight;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.post__text {
+  font-weight: $main-font-weight;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.post__like {
+  border: none;
+  background-color: $background-color-2;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart-pink.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
+  background-position: center center;
+}
+
+.post__like-label {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $link-color;
+}
+
+.post__text-bottom {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-color;
+  background-color: $background-color-2;
+}

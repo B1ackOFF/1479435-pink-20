@@ -1,0 +1,18 @@
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__title {
+  font-weight: $additional-font-weight;
+  font-size: 18px;
+  line-height: 25px;
+  color: $dark-color;
+}
+
+.contacts__link {
+  font-weight: $special-font-weight;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 33px;
+  color: $link-color;
+}
