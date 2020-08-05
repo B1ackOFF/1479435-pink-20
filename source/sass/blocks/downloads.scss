@@ -6,11 +6,24 @@
   display: block;
   width: 280px;
   min-height: 55px;
+  font-weight: $additional-font-weight;
   text-align: center;
   line-height: 55px;
   color: $background-color-2;
   border: 3px solid $background-color-2;
   border-radius: 29px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color;
+    background-color: $background-color-2;
+  }
+
+  &:active {
+    color: $link-color-opacity;
+    background-color: $background-color-2;
+  }
 }
 
 .downloads__text {

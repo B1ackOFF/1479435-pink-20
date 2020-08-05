@@ -1,0 +1,25 @@
+.scale__range {
+  appearance: none;
+  width: 240px;
+  height: 2px;
+  border: 2px solid $dark-color;
+  color: $link-color;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: $background-color-2;
+    border: 2px solid $link-color;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.scale__range--active::-webkit-slider-thumb {
+  background-color: $link-color;
+  border: none;
+}
+

@@ -2,3 +2,17 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
+
+.footer__logo-image {
+  &:hover path {
+    fill: $link-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .footer__logo-pink path{
+    fill: $dark-color;
+  }
+}

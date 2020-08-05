@@ -1,0 +1,53 @@
+.modal {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  left: 0;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-color;
+  text-align: center;
+  background-color: $background-color-2;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--error {
+    //display: none;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  &--sent {
+    //display: none;
+    top: 60%;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-image: linear-gradient(to bottom, $background-color-2 55%, $light-color 55%);
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: $background-color-1;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 40px;
+
+  &--sent {
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-bottom: 80px;
+  }
+}
+
+.modal__button {
+  margin-bottom: 52px;
+}

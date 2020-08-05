@@ -23,9 +23,12 @@
   color: $background-color-2;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus{
     color: $link-color;
+  }
+
+  &:active {
+    color: $link-color-opacity;
   }
 
   &:active {

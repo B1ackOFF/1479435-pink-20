@@ -18,10 +18,12 @@
 .user__input {
   min-width: 276px;
   min-height: 59px;
+  font-family: $main-font;
   border: 2px solid $light-color-2;
   border-radius: 2px;
 
   &::placeholder {
+    font-family: $main-font;
     font-size: 18px;
     line-height: 30px;
     color: $dark-color;

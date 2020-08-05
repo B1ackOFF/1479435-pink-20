@@ -12,37 +12,6 @@
   border: none;
 }
 
-.competition__submit {
-  display: block;
-  min-width: 296px;
-  min-height: 59px;
-  margin: 0 auto;
-  font-weight: $additional-font-weight;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $background-color-2;
-  background-color: #2aab6d;
-  border: 2px solid #2aab6d;
-  border-radius: 2px;
-  outline: none;
-
-  &:hover,
-  &:focus {
-    background-color: #1c9b5e;
-    border: 2px solid #1c9b5e;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:disabled {
-    background: $light-color-2;
-    border: 2px solid $light-color-2;
-  }
-}
-
 .competition__text {
   display: block;
   margin: 0 0 26px 0;
