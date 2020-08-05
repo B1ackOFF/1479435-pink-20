@@ -47,15 +47,15 @@
   &:focus {
     background-color: $link-color;
     box-shadow:
-    0 -8px 0 0 $link-color,
-    0 8px 0 0 $link-color;
+      0 -8px 0 0 $link-color,
+      0 8px 0 0 $link-color;
   }
 
   &:active {
     background-color: $link-color;
     box-shadow:
-    0 -8px 0 0 $link-color,
-    0 8px 0 0 $link-color;
+      0 -8px 0 0 $link-color,
+      0 8px 0 0 $link-color;
     opacity: 0.3;
   }
 }
