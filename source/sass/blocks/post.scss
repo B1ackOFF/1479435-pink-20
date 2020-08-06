@@ -4,8 +4,8 @@
 }
 
 .post__description {
-  background-color: $light-color;
   margin: 0;
+  background-color: $light-color;
 }
 
 .post__author {
@@ -27,14 +27,14 @@
 }
 
 .post__like {
-  border: none;
-  background-color: $background-color-2;
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart-pink.svg");
   background-repeat: no-repeat;
   background-size: 13px 12px;
   background-position: center center;
+  border: none;
+  background-color: $background-color-2;
 }
 
 .post__like-label {

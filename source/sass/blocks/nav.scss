@@ -1,9 +1,9 @@
 .nav {
-  font-weight: $additional-font-weight;
-  color: $background-color-2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
+  font-weight: $additional-font-weight;
+  color: $background-color-2;
 }
 
 .nav__list {
@@ -25,20 +25,37 @@
 }
 
 .nav__toggle {
+  position: relative;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  width: 50px;
+  height: 4px;
+  justify-self: end;
+  align-items: center;
+  margin-top: 31px;
   border: none;
   background-color: $background-color-2;
   border-radius: 1px;
-  width: 50px;
-  height: 4px;
-  position: relative;
-  align-items: center;
-  margin-top: 31px;
   box-shadow:
     0 -8px 0 0 $background-color-2,
     0 8px 0 0 $background-color-2;
-  justify-self: end;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+    box-shadow:
+      0 -8px 0 0 $link-color,
+      0 8px 0 0 $link-color;
+  }
+
+  &:active {
+    background-color: $link-color;
+    box-shadow:
+      0 -8px 0 0 $link-color,
+      0 8px 0 0 $link-color;
+    opacity: 0.3;
+  }
 }

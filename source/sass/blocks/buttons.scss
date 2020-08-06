@@ -1,12 +1,45 @@
 .buttons__item {
-  background-color: $background-color-2;
-  border: 3px solid $link-color;
-  border-radius: 30px;
   min-width: 280px;
   min-height: 55px;
+  margin-bottom: 33px;
+  font-family: $main-font;
   font-weight: $additional-font-weight;
   font-size: 18px;
   line-height: 18px;
   color: $link-color;
-  margin-bottom: 33px;
+  background-color: $background-color-2;
+  border: 3px solid $link-color;
+  border-radius: 30px;
+  outline: none;
+}
+
+.buttons__item--submit {
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+    color: $background-color-2;
+  }
+
+  &:active {
+    background-color: $link-color;
+    color: $background-color-2-opacity;
+  }
+}
+
+.buttons__item--reset {
+  color: $dark-color;
+  background-color: $background-color-2;
+  border: 3px solid $dark-color;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $dark-color;
+    color: $background-color-2;
+    opacity: 0.3;
+  }
 }

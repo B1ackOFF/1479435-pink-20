@@ -1,0 +1,74 @@
+.user__legend {
+  @include none;
+}
+
+.user__list {
+  @include list-reset;
+}
+
+.user__label {
+  display: block;
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $link-color;
+}
+
+.user__input {
+  min-width: 276px;
+  min-height: 59px;
+  font-family: $main-font;
+  border: 2px solid $light-color-2;
+  border-radius: 2px;
+
+  &::placeholder {
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark-color;
+  }
+
+  &:hover {
+    border: 2px solid $dark-color;
+  }
+}
+
+.user__item:focus-within .user__input {
+  outline: none;
+  border: 2px solid $link-color;
+}
+
+.user__input--comment {
+  width: 276px;
+  height: 197px;
+  resize: none;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $dark-color;
+  }
+
+  &:focus {
+    border: 2px solid $link-color;
+  }
+
+  &::placeholder {
+    padding: 0 12px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark-color;
+  }
+}
+
+.user__label--comment {
+  order: -1;
+  padding: 0;
+}
+
+.user__comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

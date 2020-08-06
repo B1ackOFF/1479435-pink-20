@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "global.scss";
 @import "mixins.scss";
+@import "blocks/buttons-green.scss";
 @import "blocks/header.scss";
 @import "blocks/menu-list.scss";
 @import "blocks/main.scss";
@@ -21,13 +22,12 @@
 @import "blocks/editor.scss";
 @import "blocks/buttons.scss";
 @import "blocks/nav.scss";
-/*
 @import "blocks/user.scss";
-@import "blocks/upload.scss";
 @import "blocks/trip.scss";
-@import "blocks/map.scss";
+@import "blocks/competition.scss";
+@import "blocks/modal.scss";
+//@import "blocks/map.scss";
 @import "blocks/tools.scss";
 @import "blocks/scale.scss";
-@import "blocks/price.scss";
-@import "blocks/competition.scss";
-*/
+//@import "blocks/price.scss";
+//@import "blocks/upload.scss";
