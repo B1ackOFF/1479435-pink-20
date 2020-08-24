@@ -5,6 +5,16 @@
   border: 2px solid $dark-color;
   color: $link-color;
   outline: none;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 288px;
+  }
 
   &::-webkit-slider-thumb {
     appearance: none;
@@ -18,7 +28,24 @@
   }
 }
 
+.scale__range--active {
+  position: absolute;
+  top: 150%;
+  left: -50%;
+  display: block;
+
+  &::-webkit-slider-thumb {
+    background-color: $link-color;
+    border: none;
+  }
+
+  @media (min-width: $tablet) {
+    position: static;
+  }
+}
+/*
 .scale__range--active::-webkit-slider-thumb {
   background-color: $link-color;
   border: none;
 }
+*/

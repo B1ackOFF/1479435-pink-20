@@ -17,6 +17,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.header__wrapper {
-  @include wrapper;
+.header__background--open-menu {
+  position: relative;
+  background-color: $dark-color;
 }

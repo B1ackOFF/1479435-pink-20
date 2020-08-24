@@ -6,43 +6,42 @@
     <meta name="description" content="Фотоприложение для раскрашивания серых будней" />
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="body">
     <header class="header">
       <div class="header__background">
-        <div class="header__wrapper">
-          <nav class="nav">
-            <a href="index.html" class="nav__logo" aria-label="Переход на главную страницу">
-              <svg class="nav__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-                <g>
-                  <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-                  <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-                  <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-                  <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-                </g>
-              </svg>
-            </a>
+        <nav class="nav">
+          <a href="index.html" class="nav__logo" aria-label="Переход на главную страницу">
+            <svg class="nav__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+              <g>
+                <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+              </g>
+            </svg>
+          </a>
 
-            <button class="nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-            <ul class="nav__list menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link menu-list__link--active" href="#">Конкурс</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          <ul class="nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--photo" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--active" href="#">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -53,11 +52,11 @@
 
       <section class="competition">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="competition__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__description--hide">Пожалуйста, заполните форму ниже:</span></p>
 
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="competition__fieldset user">
-            <legend class="user__legend">ФИО пользователя</legend>
+          <fieldset class="competition__fieldset user user--name">
+            <legend class="user__legend user__legend--hide">ФИО пользователя</legend>
 
             <ul class="user__list">
               <li class="user__item">
@@ -80,13 +79,13 @@
           <fieldset class="competition__fieldset trip">
             <legend class="trip__legend">Ваши безбашенные&nbsp;достижения в путешествии</legend>
 
-            <ul class="trip__list">
+            <ul class="trip__list trip__list--progress">
               <li class="trip__item">
                 <input class="trip__input" id="shark-trip" type="checkbox" name="shark-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="shark-trip">Сделал селфи с акулой</label>
               </li>
 
-              <li class="trip__item trip__item--beach">
+              <li class="trip__item">
                 <input class="trip__input" id="beach-trip" type="checkbox" name="beach-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="beach-trip">Обгорел на пляже</label>
               </li>
@@ -113,23 +112,23 @@
             </ul>
           </fieldset>
 
-          <fieldset class="competition__fieldset user">
-            <legend class="user__legend">Контактные данные</legend>
+          <fieldset class="competition__fieldset user user--contact">
+            <legend class="user__legend">Контактная информация</legend>
 
-            <ul class="user__list">
-              <li class="user__item">
+            <ul class="user__list user__list--contact">
+              <li class="user__item user__item--contact">
                 <label class="user__label" for="user-phone">Номер телефона</label>
-                <input class="user__input" id="user-phone" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
+                <input class="user__input user__input--contact" id="user-phone" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
               </li>
 
-              <li class="user__item">
+              <li class="user__item user__item--contact">
                 <label class="user__label" for="user-email">Aдрес почты</label>
-                <input class="user__input" id="user-email" type="email" name="user-email" placeholder="Введите почту *">
+                <input class="user__input user__input--contact" id="user-email" type="email" name="user-email" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="competition__fieldset trip">
+          <fieldset class="competition__fieldset trip trip--app">
             <legend class="trip__legend">С каким приложением путешествовали</legend>
 
             <ul class="trip__list">
@@ -148,10 +147,10 @@
             </ul>
           </fieldset>
 
-          <fieldset class="competition__fieldset user">
-            <div class="user__comment">
-              <legend class="visually-hidden">Комментарий пользователя</legend>
+          <fieldset class="competition__fieldset user user--textarea">
+            <legend class="user__legend--texterea">Опишите свои эмоции</legend>
 
+            <div class="user__comment">
               <textarea class="user__input user__input--comment" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="30" rows="10"></textarea>
               <label class="user__label user__label--comment" for="user-comment">Опишите свои эмоции</label>
             </div>
@@ -159,7 +158,7 @@
 
           <div class="competition__footer">
             <button class="competition__submit buttons-green" type="submit">Отправить форму</button>
-            <p class="competition__text"><sup class="competition__sup">*</sup> — обязательные поля</p>
+            <p class="competition__text"><sup class="competition__sup">*</sup> — обязательные <span class="competition__sup--hide">для заполнения</span> поля</p>
           </div>
         </form>
       </section>

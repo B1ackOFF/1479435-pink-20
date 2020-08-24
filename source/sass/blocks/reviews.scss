@@ -1,15 +1,130 @@
+.reviews {
+  position: relative;
+  z-index: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 0;
+  background-color: $background-color-2;
+}
+
 .reviews__list {
   @include list-reset;
+
+  @media (min-width: $desktop) {
+    min-height: 405px;
+  }
+}
+
+.reviews__item {
+  @include none;
+}
+
+.reviews__item--active {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+  }
+}
+
+.reviews__blockquote {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 292px;
+    justify-content: flex-end;
+  }
 }
 
 .reviews__autor {
+  position: relative;
   font-weight: $additional-font-weight;
   font-style: normal;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+    font-size: 24px;
+  }
+}
+
+.reviews__autor-info {
+  display: none;
+  margin-top: 17px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    font-weight: $main-font-weight;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    font-weight: $main-font-weight;
+    font-size: 18px;
+  }
 }
 
 .reviews__text {
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
   font-size: 14px;
   line-height: 24px;
   color: $dark-color;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -120%;
+      left: 43%;
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-size: 79px 63px;
+      opacity: 0.1;
+    }
+  }
+}
+
+.reviews__points {
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.reviews__arrows {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

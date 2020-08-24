@@ -1,9 +1,10 @@
 .store-list {
   @include list-reset;
+  min-width: 280px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 35px;
-  min-width: 320px;
 }
 
 .store-list__link {
