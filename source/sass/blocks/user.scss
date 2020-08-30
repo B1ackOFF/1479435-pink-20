@@ -49,11 +49,14 @@
 .user__list {
   @include list-reset;
   text-align: left;
-  width: 270px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet) {
-    width: 433px;
+    display: block;
+    width: 100%;
   }
 }
 
@@ -62,7 +65,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
   }
 }
@@ -89,6 +92,7 @@
   border-radius: 2px;
 
   &::placeholder {
+    padding-left: 20px;
     font-family: $main-font;
     font-size: 18px;
     line-height: 30px;
@@ -133,7 +137,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 79%;
+      right: 60px;
       width: 59px;
       height: 59px;
       background-color: $light-color-2;
@@ -147,9 +151,11 @@
 
   @media (min-width: $desktop) {
     margin-top: 44px;
+    padding-left: 0;
+    padding-right: 0;
 
     &::before {
-      left: 76%;
+      left: 84%;
     }
   }
 }
