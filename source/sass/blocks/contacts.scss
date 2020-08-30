@@ -3,6 +3,8 @@
   position: relative;
   grid-row-start: 5;
   grid-row-end: 6;
+  width: 100%;
+  max-width: 940px;
   text-align: center;
 }
 
@@ -57,8 +59,6 @@
 
     &:last-child {
       width: 211px;
-      margin-left: 111px;
-      margin-right: 94px;
     }
   }
 }

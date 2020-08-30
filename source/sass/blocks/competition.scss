@@ -1,5 +1,8 @@
 .competition {
   text-align: left;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
     text-align: center;
@@ -10,17 +13,13 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content;
-    row-gap: 65px;
-    padding-left: 3%;
-    padding-right: 3%;
+    row-gap: 69px;
+    column-gap: 40px;
   }
 
   @media (min-width: $desktop) {
     grid-template-rows: min-content min-content min-content min-content;
-    grid-template-columns: 1fr 1fr;
-    gap: 65px;
-    margin-left: 2%;
-    margin-right: 2%;
+    grid-template-columns: min-content min-content;
   }
 }
 

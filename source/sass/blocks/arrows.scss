@@ -1,9 +1,11 @@
 .arrows {
   position: absolute;
   top: 33%;
-  left: 0;
+  left: 50%;
   width: 100%;
   min-height: 41px;
+  transform: translateX(-50%);
+  max-width: 940px;
 }
 
 .arrows__button {
@@ -38,14 +40,8 @@
 }
 
 .arrows__button--next {
-  margin-right: 10vw;
-
   &::before {
     right: 0;
     background-image: url("../img/icon-review-arrow-right.svg");
   }
-}
-
-.arrows__button--back {
-  margin-left: 10vw;
 }

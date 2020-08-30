@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   grid-row-start: 3;
   grid-row-end: 4;
   margin: 0;
@@ -11,7 +11,9 @@
   @include list-reset;
 
   @media (min-width: $desktop) {
+    max-width: 940px;
     min-height: 405px;
+    margin: 0 auto;
   }
 }
 

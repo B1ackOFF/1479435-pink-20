@@ -13,8 +13,10 @@
     min-height: 127px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     min-height: 197px;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 

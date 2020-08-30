@@ -26,6 +26,11 @@
     cursor: pointer;
     outline: none;
   }
+
+  &::-webkit-slider-thumb:active {
+    background-color: $link-color;
+    border: none;
+  }
 }
 
 .scale__range--active {
@@ -34,18 +39,8 @@
   left: -50%;
   display: block;
 
-  &::-webkit-slider-thumb {
-    background-color: $link-color;
-    border: none;
-  }
-
   @media (min-width: $tablet) {
     position: static;
   }
 }
-/*
-.scale__range--active::-webkit-slider-thumb {
-  background-color: $link-color;
-  border: none;
-}
-*/
+

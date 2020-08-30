@@ -28,10 +28,12 @@
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    min-width: 431px;
   }
 }
 
 .trip__legend {
+  width: 100%;
   padding: 42px 48px 55px 48px;
   font-size: 14px;
   line-height: 18px;
@@ -41,11 +43,8 @@
   white-space: pre-line;
   background-color: $light-color;
 
-  @media (max-width: 659px) {
-    width: 100%;
-  }
-
   @media (min-width: $tablet) {
+    width: auto;
     padding: 0;
     padding-left: 33px;
     padding-right: 33px;
@@ -86,7 +85,7 @@
   margin-bottom: 69px;
 
   @media (min-width: $desktop) {
-    margin-bottom: 69px;
+    margin-bottom: 39px;
   }
 }
 

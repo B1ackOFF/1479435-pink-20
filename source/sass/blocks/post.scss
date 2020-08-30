@@ -3,63 +3,6 @@
   color: $dark-color;
 }
 
-.post__item {
-  width: 87%;
-
-  @media (min-width: $tablet) {
-    min-width: 300px;
-    min-height: 100%;
-
-    &:nth-child(2n) {
-      justify-self: end;
-    }
-  }
-
-  @media (min-width: $desktop) {
-    min-width: 300px;
-    min-height: 100%;
-
-    &:nth-child(3n-1) {
-      justify-self: end;
-    }
-
-    &:nth-child(3n-2) {
-      justify-self: start;
-    }
-
-    &:nth-child(3n) {
-      justify-self: center;
-    }
-  }
-}
-
-.post__item:first-child {
-  width: 100%;
-
-  @media (min-width: $tablet) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  @media (min-width: $desktop) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-}
-
-.post__item:first-child .post__background {
-  width: 87%;
-  margin: 0 auto;
-
-  @media (min-width: $desktop) {
-    width: 91.5%;
-  }
-}
-
 .post__art {
   @media (min-width: $tablet) {
     height: 100%;
@@ -72,7 +15,8 @@
 
 .post__description {
   margin: 0 auto;
-  padding-left: 17px;
+  padding-left: 10px;
+  padding-right: 5px;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -104,7 +48,7 @@
 .post__like {
   width: 13px;
   height: 12px;
-  margin-left: 17px;
+  margin: 17px;
   background-image: url("../img/icon-heart-pink.svg");
   background-repeat: no-repeat;
   background-size: 13px 12px;
@@ -124,6 +68,7 @@
 }
 
 .post__like-label {
+  margin: 0;
   padding-left: 17px;
   font-size: 12px;
   line-height: 24px;
@@ -139,6 +84,8 @@
 }
 
 .post__text-bottom {
+  grid-row-start: 4;
+  grid-row-end: 5;
   display: block;
   margin: 0 auto;
   width: 280px;
@@ -165,6 +112,7 @@
 }
 
 .post__link {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
@@ -178,30 +126,98 @@
   height: 100%;
   margin: 0;
   padding: 0;
-
+/*
   @media (min-width: $tablet) {
     min-width: 300px;
     min-height: 300px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     min-width: 300px;
     min-height: 400px;
+  }*/
+}
+
+.post__photo--panorama {
+  width: 100vw;
+}
+
+.post__link--panorama {
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 140px;
+    height: 36px;
+    font-family: $main-font;
+    font-weight: $additional-font-weight;
+    font-size: 12px;
+    line-height: 36px;
+    text-align: center;
+    background-color: $link-color;
+    color: $background-color-2;
+
+    @media (min-width: $tablet) {
+      top: 19%;
+      right: 3%;
+    }
+
+    @media (min-width: $desktop) {
+      top: 11%;
+      right: 11%;
+    }
   }
 }
 
 .post__background {
+  position: relative;
   background-color: $light-color;
-
-  &:first-child {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
   @media (min-width: $tablet) {
     min-height: 170px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr min-content;
+  }
+}
+
+.post__background--panorama {
+  @media (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+  }
+}
+
+.post__background--panorama .post__like {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 38px;
+    right: 30px;
+    margin: 0;
+  }
+}
+
+.post__background--panorama .post__like-label {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 32px;
+    right: 59px;
+    }
+}
+
+.post__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet) {
+    max-width: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 940px;
   }
 }

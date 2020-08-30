@@ -32,7 +32,7 @@
               <a class="menu-list__link menu-list__link--active" href="#">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link menu-list__link--photo" href="photo.html">Фотографии</a>
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="form.html">Конкурс</a>
@@ -50,29 +50,32 @@
 
       <section class="intro">
         <div class="intro__background">
-          <h2 class="visually-hidden">Фотоприложение Pink и как его скачать</h2>
-          <p class="intro__heading">Взгляните на жизнь иначе!</p>
-        </div>
-        <div class="intro__downloads downloads">
-          <a class="downloads__link" href="https://www.apple.com/icloud/">Скачать приложение</a>
-          <ul class="downloads__list store-list">
-            <li class="store-list__item">
-              <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Apple">
-                <img class="store-list__img" src="../img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
-              </a>
-            </li>
-            <li class="store-list__item">
-              <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Android">
-                <img class="store-list__img" src="../img/logo-android.svg" width="43" height="47" alt="Логотип Android">
-              </a>
-            </li>
-            <li class="store-list__item">
-              <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Microsoft">
-                <img class="store-list__img" src="../img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
-              </a>
-            </li>
-          </ul>
-          <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="intro__wrapper">
+            <h2 class="visually-hidden">Фотоприложение Pink и как его скачать</h2>
+            <p class="intro__heading">Взгляните на жизнь иначе!</p>
+
+            <div class="intro__downloads downloads">
+              <a class="downloads__link" href="https://www.apple.com/icloud/">Скачать приложение</a>
+              <ul class="downloads__list store-list">
+                <li class="store-list__item">
+                  <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Apple">
+                    <img class="store-list__img" src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
+                  </a>
+                </li>
+                <li class="store-list__item">
+                  <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Android">
+                    <img class="store-list__img" src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
+                  </a>
+                </li>
+                <li class="store-list__item">
+                  <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Microsoft">
+                    <img class="store-list__img" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
+                  </a>
+                </li>
+              </ul>
+              <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -103,12 +106,14 @@
           </ul>
         </div>
 
+        <div class="info__clock-background">
         <div class="info__clock">
           <h2 class="info__clock-heading">Эффект на 24 часа!</h2>
 
           <p class="info__clock-text"> Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
 
           <a href="#" class="info__clock-link">Узнать больше об исследовании</a>
+        </div>
         </div>
       </section>
 

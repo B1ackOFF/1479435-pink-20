@@ -9,6 +9,11 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+
+  @media (min-width: $desktop) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .info__heading {
@@ -49,6 +54,8 @@
   @media (min-width: $tablet) {
     align-items: flex-start;
     padding-left: 50vw;
+    max-width: 940px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
@@ -56,7 +63,8 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0 0 50px 0;
+    max-width: 940px;
+    margin: 0 auto 50px auto;
   }
 }
 
@@ -182,7 +190,7 @@
 
     @media (min-width: $tablet) {
       bottom: 0%;
-      left: calc(0% + 20px);
+      left: calc(25% - 130px);
       width: 268px;
       height: 547px;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -210,6 +218,14 @@
   }
 }
 
+.info__clock-background {
+  width: 100%;
+
+  @media (min-width: $desktop) {
+    background-color: $light-color;
+  }
+}
+
 .info__clock {
   display: none;
 
@@ -218,19 +234,22 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 50vw;
+    padding-left: 50%;
     min-height: 330px;
     background-image: url("../img/main-timer.svg");
     background-repeat: no-repeat;
     background-position: 5% bottom;
     background-size: 238px 276px;
+    max-width: 940px;
+    margin: 0 auto;
+
   }
 
   @media (min-width: $desktop) {
     min-height: 429px;
-    background-color: $light-color;
+    padding-left: 340px;
     background-size: 298px 345px;
-    background-position: 20% 50%;
+    background-position: 0 50%;
   }
 }
 

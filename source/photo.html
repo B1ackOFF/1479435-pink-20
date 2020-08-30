@@ -32,7 +32,7 @@
               <a class="menu-list__link" href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link menu-list__link--photo menu-list__link--active" href="#">Фотографии</a>
+              <a class="menu-list__link menu-list__link--active" href="#">Фотографии</a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="form.html">Конкурс</a>
@@ -57,14 +57,14 @@
             <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
 
-        <ul class="photo__list post">
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама пользователя Анна">
-              </a>
+        <div class="photo__panorama">
+          <article class="post__art">
+            <a class="post__link post__link--panorama" href="#" aria-label="Открыть полноразмерное изображение">
+              <img class="post__photo post__photo--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама пользователя Анна">
+            </a>
 
-              <div class="post__background">
+            <div class="post__wrapper">
+              <div class="post__background post__background--panorama">
                 <blockquote class="post__description">
                   <cite class="post__author">Анна
                     <time class="post__time" datetime="2019-11-08T19:00">(5 минут назад)</time>
@@ -75,129 +75,133 @@
                 <button class="post__like" aria-label="Поставить лайк"></button>
                 <p class="post__like-label">Нравится: <span class="post__like-counter">215</span></p>
               </div>
-            </article>
-          </li>
+            </div>
+          </article>
+        </div>
 
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Левон">
-              </a>
+        <div class="photo__wrapper">
+          <ul class="photo__list post">
+            <li class="post__item">
+              <article class="post__art">
+                <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
+                  <img class="post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Левон">
+                </a>
 
-              <div class="post__background">
-                <blockquote class="post__description">
-                  <cite class="post__author">Левон
-                    <time class="post__time" datetime="2019-11-08T14:00">(5 часов назад)</time>
-                  </cite>
-                  <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                </blockquote>
+                <div class="post__background">
+                  <blockquote class="post__description">
+                    <cite class="post__author">Левон
+                      <time class="post__time" datetime="2019-11-08T14:00">(5 часов назад)</time>
+                    </cite>
+                    <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  </blockquote>
 
-                <button class="post__like" aria-label="Поставить лайк"></button>
-                <p class="post__like-label">Нравится: <span class="post__like-counter">356</span></p>
-              </div>
-            </article>
-          </li>
+                  <button class="post__like" aria-label="Поставить лайк"></button>
+                  <p class="post__like-label">Нравится: <span class="post__like-counter">356</span></p>
+                </div>
+              </article>
+            </li>
 
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Антон">
-              </a>
+           <li class="post__item">
+              <article class="post__art">
+                <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
+                  <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Антон">
+                </a>
 
-              <div class="post__background">
-                <blockquote class="post__description">
-                  <cite class="post__author">Антон
-                    <time class="post__time" datetime="2019-11-08T07:00">(12 часов назад)</time>
-                  </cite>
-                  <p class="post__text">Соседи будут рады!</p>
-                </blockquote>
+                <div class="post__background">
+                  <blockquote class="post__description">
+                    <cite class="post__author">Антон
+                      <time class="post__time" datetime="2019-11-08T07:00">(12 часов назад)</time>
+                    </cite>
+                    <p class="post__text">Соседи будут рады!</p>
+                  </blockquote>
 
-                <button class="post__like" aria-label="Поставить лайк"></button>
-                <p class="post__like-label">Нравится: <span class="post__like-counter">666</span></p>
-              </div>
-            </article>
-          </li>
+                  <button class="post__like" aria-label="Поставить лайк"></button>
+                  <p class="post__like-label">Нравится: <span class="post__like-counter">666</span></p>
+                </div>
+              </article>
+            </li>
 
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Борис">
-              </a>
+            <li class="post__item">
+              <article class="post__art">
+                <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
+                  <img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Борис">
+                </a>
 
-              <div class="post__background">
-                <blockquote class="post__description">
-                  <cite class="post__author">Борис
-                    <time class="post__time" datetime="2019-11-07T23:00">(20 часов назад)</time>
-                  </cite>
-                  <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                </blockquote>
+                <div class="post__background">
+                  <blockquote class="post__description">
+                    <cite class="post__author">Борис
+                      <time class="post__time" datetime="2019-11-07T23:00">(20 часов назад)</time>
+                    </cite>
+                    <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  </blockquote>
 
-                <button class="post__like" aria-label="Поставить лайк"></button>
-                <p class="post__like-label">Нравится: <span class="post__like-counter">215</span></p>
-              </div>
-            </article>
-          </li>
+                  <button class="post__like" aria-label="Поставить лайк"></button>
+                  <p class="post__like-label">Нравится: <span class="post__like-counter">215</span></p>
+                </div>
+              </article>
+            </li>
 
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Сергей">
-              </a>
+            <li class="post__item">
+              <article class="post__art">
+                <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
+                  <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Сергей">
+                </a>
 
-              <div class="post__background">
-                <blockquote class="post__description">
-                  <cite class="post__author">Сергей
-                    <time class="post__time" datetime="2019-11-07T18:00">(25 часов назад)</time>
-                  </cite>
-                  <p class="post__text">Самая кубанская в мире!</p>
-                </blockquote>
+                <div class="post__background">
+                  <blockquote class="post__description">
+                    <cite class="post__author">Сергей
+                      <time class="post__time" datetime="2019-11-07T18:00">(25 часов назад)</time>
+                    </cite>
+                    <p class="post__text">Самая кубанская в мире!</p>
+                  </blockquote>
 
-                <button class="post__like" aria-label="Поставить лайк"></button>
-                <p class="post__like-label">Нравится: <span class="post__like-counter">4</span></p>
-              </div>
-            </article>
-          </li>
+                  <button class="post__like" aria-label="Поставить лайк"></button>
+                  <p class="post__like-label">Нравится: <span class="post__like-counter">4</span></p>
+                </div>
+              </article>
+            </li>
 
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Максим">
-              </a>
+            <li class="post__item">
+              <article class="post__art">
+                <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
+                  <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Максим">
+                </a>
 
-              <div class="post__background">
-                <blockquote class="post__description">
-                  <cite class="post__author">Максим
-                    <time class="post__time" datetime="2019-11-06T22:00">(40 часов назад)</time>
-                  </cite>
-                  <p class="post__text">Где снег-то?</p>
-                </blockquote>
+                <div class="post__background">
+                  <blockquote class="post__description">
+                    <cite class="post__author">Максим
+                      <time class="post__time" datetime="2019-11-06T22:00">(40 часов назад)</time>
+                    </cite>
+                    <p class="post__text">Где снег-то?</p>
+                  </blockquote>
 
-                <button class="post__like" aria-label="Поставить лайк"></button>
-                <p class="post__like-label">Нравится: <span class="post__like-counter">150</span></p>
-              </div>
-            </article>
-          </li>
+                  <button class="post__like" aria-label="Поставить лайк"></button>
+                  <p class="post__like-label">Нравится: <span class="post__like-counter">150</span></p>
+                </div>
+              </article>
+            </li>
 
-          <li class="post__item">
-            <article class="post__art">
-              <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
-                <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Надежда">
-              </a>
+            <li class="post__item">
+              <article class="post__art">
+                <a class="post__link" href="#" aria-label="Открыть полноразмерное изображение">
+                  <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Надежда">
+                </a>
 
-              <div class="post__background">
-                <blockquote class="post__description">
-                  <cite class="post__author">Надежда
-                    <time class="post__time" datetime="2019-11-06T17:00">(45 часов назад)</time>
-                  </cite>
-                  <p class="post__text">Всем GM и взаимные лайки!</p>
-                </blockquote>
+                <div class="post__background">
+                  <blockquote class="post__description">
+                    <cite class="post__author">Надежда
+                      <time class="post__time" datetime="2019-11-06T17:00">(45 часов назад)</time>
+                    </cite>
+                    <p class="post__text">Всем GM и взаимные лайки!</p>
+                  </blockquote>
 
-                <button class="post__like" aria-label="Поставить лайк"></button>
-                <p class="post__like-label">Нравится: <span class="post__like-counter">2560</span></p>
-              </div>
-            </article>
-          </li>
-        </ul>
+                  <button class="post__like" aria-label="Поставить лайк"></button>
+                  <p class="post__like-label">Нравится: <span class="post__like-counter">2560</span></p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
 
         <p class="post__text-bottom">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
@@ -227,7 +231,7 @@
                 </label>
 
                 <div class="tools__scale scale">
-                  <input class="scale__range scale__range--active" type="range" id="bar-crop" name="bar" min="0" max="10">
+                  <input class="scale__range scale__range--active" type="range" id="bar-crop" name="bar" min="0" max="10" value="3">
                   <label class="scale__range-label" for="bar-crop"><span class="visually-hidden">Ползунок инструмента кадрирования</span></label>
                 </div>
               </li>
@@ -244,7 +248,7 @@
                 </label>
 
                 <div class="tools__scale scale">
-                  <input class="scale__range" type="range" id="bar-fill" name="bar" min="0" max="10">
+                  <input class="scale__range" type="range" id="bar-fill" name="bar" min="0" max="10" value="9">
                   <label class="scale__range-label" for="bar-fill"><span class="visually-hidden">Ползунок инструмента заливки</span></label>
                 </div>
               </li>
@@ -261,7 +265,7 @@
                 </label>
 
                 <div class="tools__scale scale">
-                  <input class="scale__range" type="range" id="bar-contrast" name="bar" min="0" max="10">
+                  <input class="scale__range" type="range" id="bar-contrast" name="bar" min="0" max="10" value="6">
                   <label class="scale__range-label" for="bar-contrast"><span class="visually-hidden">Ползунок инструмента контрастности</span></label>
                 </div>
               </li>
