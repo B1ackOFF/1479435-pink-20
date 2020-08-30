@@ -126,16 +126,6 @@
   height: 100%;
   margin: 0;
   padding: 0;
-/*
-  @media (min-width: $tablet) {
-    min-width: 300px;
-    min-height: 300px;
-  }
-
-  @media (min-width: $desktop) {
-    min-width: 300px;
-    min-height: 400px;
-  }*/
 }
 
 .post__photo--panorama {
@@ -205,13 +195,12 @@
     position: absolute;
     top: 32px;
     right: 59px;
-    }
+  }
 }
 
 .post__wrapper {
   max-width: 280px;
   margin: 0 auto;
-
 
   @media (min-width: $tablet) {
     max-width: 620px;
