@@ -119,6 +119,10 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .user__item--contact {
