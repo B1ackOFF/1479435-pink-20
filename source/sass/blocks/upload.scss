@@ -1,0 +1,44 @@
+.upload {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: $light-color;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.upload__link {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+  }
+}
+
+.upload__form {
+  @media (min-width: $tablet) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.upload__img {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
+}

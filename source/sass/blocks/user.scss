@@ -1,9 +1,73 @@
+.user {
+  @media (min-width: $tablet) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+.user--contact {
+  @media (min-width: $tablet) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 .user__legend {
   @include none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $link-color;
+  }
+}
+
+.user__legend--hide {
+  @media (min-width: $tablet) {
+    @include none;
+  }
 }
 
 .user__list {
   @include list-reset;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.user__list--contact {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .user__label {
@@ -13,6 +77,11 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $link-color;
+
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+    line-height: 59px;
+  }
 }
 
 .user__input {
@@ -23,6 +92,7 @@
   border-radius: 2px;
 
   &::placeholder {
+    padding-left: 20px;
     font-family: $main-font;
     font-size: 18px;
     line-height: 30px;
@@ -32,6 +102,79 @@
   &:hover {
     border: 2px solid $dark-color;
   }
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+    flex-grow: 1;
+  }
+}
+
+.user__item {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.user__item--contact {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 0;
+
+  @media (min-width: $tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 60px;
+      width: 59px;
+      height: 59px;
+      background-color: $light-color-2;
+      background-image: url("../img/icon-phone-pink.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 19px;
+      background-position: center center;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 44px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &::before {
+      left: 84%;
+    }
+  }
+}
+
+.user__item--contact:last-child {
+  &::before {
+    background-image: url("../img/icon-mail-pink.svg");
+    background-size: 18px 13px;
+  }
+}
+
+.user__item--contact .user__input {
+  @media (min-width: $tablet) {
+    order: -1;
+  }
 }
 
 .user__item:focus-within .user__input {
@@ -40,7 +183,7 @@
 }
 
 .user__input--comment {
-  width: 276px;
+  min-width: 276px;
   height: 197px;
   resize: none;
   outline: none;
@@ -59,11 +202,23 @@
     line-height: 30px;
     color: $dark-color;
   }
+
+  @media (min-width: $tablet) {
+    min-width: 496px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 816px;
+  }
 }
 
 .user__label--comment {
   order: -1;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    @include visually-hidden;
+  }
 }
 
 .user__comment {
@@ -71,4 +226,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.user--name {
+  border: none;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+}
+
+.user--textarea {
+  @media (min-width: $tablet) {
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.user__legend--texterea {
+  visibility: hidden;
+
+  @media (min-width: $tablet) {
+    visibility: visible;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $link-color;
+  }
+}
+
+.user__input--contact {
+  @media (min-width: $desktop) {
+    min-width: 371px;
+  }
 }

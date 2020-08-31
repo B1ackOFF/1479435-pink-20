@@ -2,11 +2,39 @@
   margin: 0;
   padding: 0;
   background-color: $light-color;
+
+  @media (min-width: $tablet) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: $background-color-2;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.trip--app {
+  @media (min-width: $tablet) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    min-width: 431px;
+  }
 }
 
 .trip__legend {
   width: 100%;
-  padding: 42px 51px 55px 51px;
+  padding: 42px 48px 55px 48px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -14,10 +42,82 @@
   text-align: center;
   white-space: pre-line;
   background-color: $light-color;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    padding: 0;
+    padding-left: 33px;
+    padding-right: 33px;
+    background-color: $background-color-2;
+  }
 }
 
 .trip__list {
   @include list-reset;
+  text-align: left;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-left: 60px;
+  }
+}
+
+.trip__list--progress {
+  @media (min-width: $desktop) {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.trip__list--progress .trip__item {
+  &:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  &:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  &:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &:nth-child(6) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .trip__input[type="checkbox"],
@@ -25,22 +125,29 @@
   appearance: none;
 }
 
+.trip__item {
+  margin-bottom: 69px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 39px;
+  }
+}
+
 .trip__label {
   position: relative;
   display: block;
   margin-left: 79px;
-  margin-bottom: 69px;
   font-size: 18px;
   line-height: 30px;
   color: $dark-color;
 
   &::before {
     content: "";
-    width: 35px;
-    height: 35px;
     position: absolute;
     left: -57px;
     bottom: 0;
+    width: 35px;
+    height: 35px;
     background-color: $background-color-2;
     border: 2px solid $light-color-2;
     border-radius: 2px;

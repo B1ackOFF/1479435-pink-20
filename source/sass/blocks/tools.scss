@@ -1,8 +1,45 @@
+.tools {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 275px;
+    min-height: 74px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 410px;
+    margin-right: 60px;
+  }
+}
+
 .tools__icon {
   opacity: 0.3;
 
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 22px;
+  }
+
+  @media (min-width: $tablet) {
+    opacity: 1;
+
+    & path {
+      fill: $link-color;
+    }
+  }
+}
+
+.tools__item--active .tools__icon {
+  opacity: 1;
+
+  & path {
+    fill: $link-color;
   }
 }

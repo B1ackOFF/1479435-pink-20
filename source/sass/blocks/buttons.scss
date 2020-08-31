@@ -1,5 +1,5 @@
 .buttons__item {
-  min-width: 280px;
+  width: 270px;
   min-height: 55px;
   margin-bottom: 33px;
   font-family: $main-font;
@@ -11,6 +11,17 @@
   border: 3px solid $link-color;
   border-radius: 30px;
   outline: none;
+
+  @media (min-width: $tablet) {
+    max-width: 260px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 183px;
+    margin-bottom: 0;
+    margin-right: 44px;
+  }
 }
 
 .buttons__item--submit {

@@ -1,22 +1,57 @@
 .nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 66px;
   font-weight: $additional-font-weight;
   color: $background-color-2;
+
+  @media (min-width: $tablet) {
+    min-height: 110px;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .nav__list {
   @include list-reset;
+
+  @media (min-width: $desktop) {
+    width: 75%;
+    justify-content: flex-end;
+    margin-right: 130px;
+    line-height: 18px;
+    z-index: 1;
+  }
 }
 
 .nav__logo {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  align-items: end;
   display: block;
-  margin-top: 22px;
+  padding-left: 20px;
+  outline: none;
+  z-index: 1;
+
+  &:hover .nav__logo-image path,
+  &:focus .nav__logo-image path {
+    fill: $link-color;
+  }
+
+  &:active .nav__logo-image path {
+    fill: $background-color-2-opacity;
+  }
 }
 
 .nav__logo-image {
@@ -26,36 +61,53 @@
 
 .nav__toggle {
   position: relative;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
   width: 50px;
   height: 4px;
+  padding: 0;
+  margin: 21px 20px 21px 0;
   justify-self: end;
-  align-items: center;
-  margin-top: 31px;
   border: none;
   background-color: $background-color-2;
   border-radius: 1px;
-  box-shadow:
-    0 -8px 0 0 $background-color-2,
-    0 8px 0 0 $background-color-2;
   outline: none;
+  z-index: 1;
 
-  &:hover,
-  &:focus {
-    background-color: $link-color;
-    box-shadow:
-      0 -8px 0 0 $link-color,
-      0 8px 0 0 $link-color;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $background-color-2;
+    border-radius: 1px;
   }
 
-  &:active {
+  &::after {
+    top: 10px;
+  }
+
+  &:hover,
+  &:focus,
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
     background-color: $link-color;
-    box-shadow:
-      0 -8px 0 0 $link-color,
-      0 8px 0 0 $link-color;
-    opacity: 0.3;
+  }
+
+  &:active,
+  &:active::before,
+  &:active::after {
+    background-color: $link-color-opacity;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 43px 20px 43px 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
   }
 }
