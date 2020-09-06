@@ -4,9 +4,27 @@
   margin: 0 auto;
   background-color: $light-color;
 
+  @media (min-width: $desktop) {
+    max-height: 514px;
+  }
+}
+
+.upload__wrapper {
+  max-width: 297px;
+  margin: 20px auto 0 auto;
+  padding-left: 17px;
+
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 638px;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 956px;
+    margin: 49px auto 0 auto;
   }
 }
 
@@ -19,10 +37,11 @@
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 57px;
+    margin-left: 19px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 57px;
+    margin: 7px 0 0 29px;
   }
 }
 

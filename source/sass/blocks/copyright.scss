@@ -1,6 +1,18 @@
 .copyright {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 32px;
+  padding-left: 15px;
+
+  @media (min-width: $tablet) {
+    margin-top: 35px;
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 61px;
+    padding-left: 163px;
+  }
 }
 
 .copyright__text {
@@ -10,12 +22,21 @@
   color: $dark-color;
 
   @media (min-width: $desktop) {
+    margin-right: 13px;
     font-size: 18px;
   }
 }
 
 .copyright__link {
   padding-top: 5px;
+
+  @media (min-width: $tablet) {
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 11px;
+  }
 }
 
 .copyright__logo-image {

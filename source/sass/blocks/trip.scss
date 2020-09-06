@@ -17,6 +17,17 @@
   }
 }
 
+.trip--progress {
+  @media (min-width: $tablet) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 6px;
+    margin-right: 23px;
+  }
+}
+
 .trip--app {
   @media (min-width: $tablet) {
     grid-row-start: 2;
@@ -28,13 +39,14 @@
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-    min-width: 431px;
+    min-width: 435px;
+    margin: 0px 23px 54px 48px;
   }
 }
 
 .trip__legend {
   width: 100%;
-  padding: 42px 48px 55px 48px;
+  padding: 39px 0 20px 17px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -46,8 +58,8 @@
   @media (min-width: $tablet) {
     width: auto;
     padding: 0;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 23px;
+    padding-right: 26px;
     background-color: $background-color-2;
   }
 }
@@ -64,15 +76,31 @@
   }
 }
 
+.trip__list--app {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
+  }
+}
+
 .trip__list--progress {
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 52px;
+    margin-top: 25px;
+  }
+
   @media (min-width: $desktop) {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -89,6 +117,10 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    @media (min-width: $desktop) {
+      padding: 0 0 0 29px;
+    }
   }
 
   &:nth-child(3) {
@@ -96,6 +128,10 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+
+    @media (min-width: $desktop) {
+      padding: 0 0 0 43px;
+    }
   }
 
   &:nth-child(4) {
@@ -103,6 +139,10 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    @media (min-width: $desktop) {
+      padding: 0 0 0 43px;
+    }
   }
 
   &:nth-child(5) {
@@ -110,6 +150,10 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+
+    @media (min-width: $desktop) {
+      padding: 0 0 0 36px;
+    }
   }
 
   &:nth-child(6) {
@@ -117,6 +161,10 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    @media (min-width: $desktop) {
+      padding: 0 0 0 36px;
+    }
   }
 }
 
@@ -126,28 +174,52 @@
 }
 
 .trip__item {
-  margin-bottom: 69px;
+  margin-bottom: 28px;
 
   @media (min-width: $desktop) {
-    margin-bottom: 39px;
+    margin-bottom: 29px;
+    padding-left: 29px;
+  }
+}
+
+.trip__item--app {
+  margin-bottom: 9px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 12px;
+    padding-left: 13px;
+  }
+}
+
+.trip__item--app:first-child {
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 24px;
   }
 }
 
 .trip__label {
   position: relative;
   display: block;
-  margin-left: 79px;
+  margin-left: 67px;
   font-size: 18px;
   line-height: 30px;
   color: $dark-color;
 
+  @media (min-width: $tablet) {
+    margin-left: 57px;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    left: -57px;
-    bottom: 0;
-    width: 35px;
-    height: 35px;
+    left: -59px;
+    bottom: -4px;
+    width: 39px;
+    height: 39px;
     background-color: $background-color-2;
     border: 2px solid $light-color-2;
     border-radius: 2px;
@@ -184,14 +256,29 @@
 }
 
 .trip__label--radio {
+  margin-left: 77px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin-left: 59px;
+  }
+
   &::before {
+    left: -69px;
+    bottom: 6px;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      left: -61px;
+    }
   }
 }
 
 .trip__input[type="radio"]:checked + .trip__label::before {
   background-image: url("../img/form-point.svg");
-  background-position: 8px 8px;
+  background-position: 11px 11px;
   background-repeat: no-repeat;
   background-size: 15px 15px;
 }

@@ -29,9 +29,8 @@
   @include list-reset;
 
   @media (min-width: $desktop) {
-    width: 75%;
+    width: 675px;
     justify-content: flex-end;
-    margin-right: 130px;
     line-height: 18px;
     z-index: 1;
   }
@@ -40,6 +39,7 @@
 .nav__logo {
   align-items: end;
   display: block;
+  margin-bottom: 19px;
   padding-left: 20px;
   outline: none;
   z-index: 1;
@@ -51,6 +51,14 @@
 
   &:active .nav__logo-image path {
     fill: $background-color-2-opacity;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -111,3 +119,24 @@
     display: none;
   }
 }
+
+.open-menu .nav__toggle {
+  width: 29px;
+  height: 3px;
+  top: -10px;
+  left: 14px;
+  transform:  rotate(45deg);
+
+  &::after {
+    width: 29px;
+    height: 3px;
+    top: 0px;
+    left: 0px;
+    transform:  rotate(-90deg);
+  }
+
+  &::before {
+    width: 0;
+  }
+}
+

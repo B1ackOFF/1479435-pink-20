@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-left: 20px;
     min-width: 275px;
     min-height: 74px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
@@ -11,7 +12,9 @@
 
   @media (min-width: $desktop) {
     min-width: 410px;
-    margin-right: 60px;
+    margin-right: 80px;
+    padding-bottom: 16px;
+    padding-left: 29px;
   }
 }
 
@@ -33,6 +36,19 @@
     & path {
       fill: $link-color;
     }
+  }
+}
+
+.tools__icon--contrast {
+  @media (min-width: $tablet) {
+    width: 17px;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 44px;
+    padding-bottom: 0px;
+    margin-bottom: 6px;
   }
 }
 
