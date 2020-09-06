@@ -125,18 +125,17 @@
   height: 3px;
   top: -10px;
   left: 14px;
-  transform:  rotate(45deg);
+  transform: rotate(45deg);
 
   &::after {
     width: 29px;
     height: 3px;
-    top: 0px;
-    left: 0px;
-    transform:  rotate(-90deg);
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
   }
 
   &::before {
     width: 0;
   }
 }
-
