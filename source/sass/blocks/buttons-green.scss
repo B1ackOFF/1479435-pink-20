@@ -1,7 +1,8 @@
 .buttons-green {
   display: block;
-  min-width: 296px;
-  min-height: 59px;
+  width: 280px;
+  height: 63px;
+  padding-left: 6px;
   margin: 0 auto;
   font-family: $main-font;
   font-weight: $additional-font-weight;
@@ -27,5 +28,18 @@
   &:disabled {
     background: $light-color-2;
     border: 2px solid $light-color-2;
+  }
+
+
+  @media (min-width: $tablet) {
+    width: 300px;
+    margin: 0;
+    margin-top: 17px;
+    margin-left: -16px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 16px;
+    margin-left: -17px;
   }
 }

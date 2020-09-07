@@ -4,7 +4,16 @@
   grid-row-start: 3;
   grid-row-end: 4;
   margin: 0;
+  padding-top: 19px;
   background-color: $background-color-2;
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 56px;
+  }
 }
 
 .reviews__list {
@@ -12,7 +21,7 @@
 
   @media (min-width: $desktop) {
     max-width: 940px;
-    min-height: 405px;
+    min-height: 330px;
     margin: 0 auto;
   }
 }
@@ -23,13 +32,16 @@
 
 .reviews__item--active {
   display: block;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 22px auto 0 auto;
   text-align: center;
   width: 280px;
 
   @media (min-width: $tablet) {
     width: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 700px;
   }
 }
 
@@ -50,11 +62,14 @@
 
 .reviews__autor {
   position: relative;
+  padding-left: 16px;
   font-weight: $additional-font-weight;
   font-style: normal;
   line-height: 30px;
 
   @media (min-width: $tablet) {
+    padding-top: 18px;
+    padding-left: 9px;
     order: 2;
     font-size: 20px;
   }
@@ -67,7 +82,6 @@
 
 .reviews__autor-info {
   display: none;
-  margin-top: 17px;
 
   @media (min-width: $tablet) {
     display: block;
@@ -84,10 +98,12 @@
 
 .reviews__text {
   position: relative;
-  margin-bottom: 50px;
+  margin-top: 7px;
+  margin-left: 8px;
+  padding-top: 6px;
   width: 100%;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   color: $dark-color;
 
   @media (min-width: $tablet) {
@@ -99,8 +115,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: -120%;
-      left: 43%;
+      top: -110%;
+      left: 44%;
       width: 79px;
       height: 63px;
       background-image: url("../img/icon-quotes.svg");
@@ -112,10 +128,6 @@
 }
 
 .reviews__points {
-  width: 280px;
-  text-align: center;
-  margin: 0 auto;
-
   @media (min-width: $desktop) {
     display: none;
   }

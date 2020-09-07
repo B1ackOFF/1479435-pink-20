@@ -1,7 +1,7 @@
 .buttons__item {
-  width: 270px;
+  width: 278px;
   min-height: 55px;
-  margin-bottom: 33px;
+  margin-bottom: 12px;
   font-family: $main-font;
   font-weight: $additional-font-weight;
   font-size: 18px;
@@ -14,13 +14,14 @@
 
   @media (min-width: $tablet) {
     max-width: 260px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    margin-left: 21px;
   }
 
   @media (min-width: $desktop) {
     max-width: 183px;
     margin-bottom: 0;
-    margin-right: 44px;
+    margin-right: 23px;
   }
 }
 

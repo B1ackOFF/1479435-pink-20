@@ -17,26 +17,28 @@
 .photo__description {
   min-width: 280px;
   margin: 0 auto;
-  margin-top: 54px;
-  margin-bottom: 60px;
+  margin-top: 44px;
+  margin-bottom: 50px;
   font-size: 14px;
   line-height: 30px;
   color: $dark-color;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 36px;
   padding-right: 20px;
 
   @media (min-width: $tablet) {
-    margin-top: 100px;
-    margin-bottom: 85px;
+    margin-top: 90px;
+    margin-bottom: 77px;
     font-size: 18px;
     max-width: 540px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 97px;
+    margin-bottom: 90px;
     font-size: 18px;
     max-width: 740px;
+    padding-left: 55px;
+    padding-right: 40px;
   }
 }
 
@@ -53,12 +55,15 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
     gap: 20px;
+    align-items: start;
   }
 
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
+    row-gap: 54px;
+    column-gap: 20px;
   }
 }
 
@@ -70,15 +75,18 @@
 }
 
 .photo__wrapper {
-  max-width: 280px;
+  max-width: 297px;
   margin: 20px auto 0 auto;
-
+  padding-left: 17px;
 
   @media (min-width: $tablet) {
-    max-width: 620px;
+    max-width: 638px;
+    padding-left: 17px;
+    margin: 16px auto 0 auto;
   }
 
   @media (min-width: $desktop) {
-    max-width: 940px;
+    max-width: 956px;
+    margin: 49px auto 0 auto;
   }
 }

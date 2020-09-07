@@ -1,37 +1,49 @@
 .price {
   grid-row-start: 4;
   grid-row-end: 5;
-  padding: 125px 0 102px;
+  padding: 125px 0 39px;
   font-size: 14px;
   line-height: 30px;
   color: $dark-color;
   text-align: center;
   text-transform: uppercase;
-  background-image: linear-gradient(-4deg, $light-color 86%, $background-color-2 86%);
+  background-image: linear-gradient(-3deg, $light-color 90%, $background-color-2 90%);
   overflow: hidden;
 
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    background-image: linear-gradient(-4deg, $light-color 87%, $background-color-2 87%);
+  }
+
   @media (min-width: $desktop) {
-    background-image: linear-gradient(-3deg, $light-color 80%, $background-color-2 80%);
+    background-image: linear-gradient(-5deg, $light-color 84%, $background-color-2 84%);
   }
 }
 
 .price__table {
-  width: calc(300% - 130px);
+  width: calc(315% - 120px);
+  margin-top: 8px;
   transform: translateX(calc(-33.333333% + 20px));
 
   @media (min-width: $tablet) {
-    margin: 0 auto;
-    width: 94%;
+    margin: 107px 0 68px 17px;
+    width: 97%;
     max-width: 940px;
-    min-height: 220px;
     transform: translateX(0);
+  }
+
+  @media (min-width: $desktop) {
+    margin: 153px 0 94px 17px;
+    width: 100%;
   }
 }
 
 .price__points {
-  width: 280px;
-  margin: 0 auto;
-  text-align: center;
+  margin-top: 21px;
 
   @media (min-width: $tablet) {
     display: none;

@@ -7,45 +7,53 @@
   @media (min-width: $tablet) {
     text-align: center;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 1003px;
+    padding-left: 41px;
+  }
 }
 
 .competition__form {
   @media (min-width: $tablet) {
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content;
-    row-gap: 69px;
     column-gap: 40px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 2px;
   }
 
   @media (min-width: $desktop) {
     grid-template-rows: min-content min-content min-content min-content;
-    grid-template-columns: min-content min-content;
+    grid-template-columns: 1fr min-content;
     padding-left: 0;
     padding-right: 0;
+    column-gap: 0;
   }
 }
 
 .competition__description {
-  margin: 54px auto;
-  max-width: 500px;
+  margin: 44px auto 30px auto;
+  padding-left: 15px;
+  max-width: 290px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: $dark-color;
-  padding-left: 20px;
-  padding-right: 20px;
+
 
   @media (min-width: $tablet) {
-    margin: 100px auto;
+    max-width: 550px;
+    padding-left: 20px;
+    margin: 90px auto 62px auto;
     font-size: 18px;
   }
 
   @media (min-width: $desktop) {
     display: inline-block;
-    margin: 100px auto;
-    max-width: 760px;
+    margin: 91px auto 72px auto;
+    max-width: 850px;
+    padding-right: 45px;
     font-size: 18px;
   }
 }
@@ -68,8 +76,10 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
+  padding: 0;
   border: 2px solid $light-color-2;
   border-radius: 2px;
+
 
   @media (max-width: 659px) {
     border: none;
@@ -78,11 +88,19 @@
 
 .competition__text {
   display: block;
-  margin: 0 0 26px 0;
+  margin: 27px 0 29px 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 27px 1px 29px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 27px 23px 0 0;
+  }
 }
 
 .competition__sup {
@@ -99,10 +117,15 @@
 }
 
 .competition__footer {
+  padding-top: 1px;
+  padding-left: 16px;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop) {
@@ -110,6 +133,7 @@
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 3;
+    margin-bottom: 9px;
   }
 }
 

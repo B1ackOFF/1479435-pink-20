@@ -10,26 +10,33 @@
 
 .contacts__list {
   @include list-reset;
+  padding-top: 35px;
+  padding-left: 19px;
 
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
-    column-gap: 97px;
-    row-gap: 50px;
-    margin-top: 50px;
+    column-gap: 11px;
+    row-gap: 41px;
+    padding-top: 35px;
+    padding-left: 16px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+    padding-top: 40px;
+    padding-left: 55px;
   }
 }
 
 .contacts__item {
+  margin-bottom: 18px;
+
   @media (min-width: $tablet) {
+    margin-bottom: 0;
+
     &:first-child {
       grid-row-start: 1;
       grid-row-end: 2;
@@ -55,19 +62,30 @@
   @media (min-width: $desktop) {
     &:nth-child(2) {
       order: 1;
+      margin-left: 83px;
     }
 
     &:last-child {
       width: 211px;
+      margin-left: 101px;
     }
   }
 }
 
 .contacts__title {
+  margin: 0;
   font-weight: $additional-font-weight;
   font-size: 18px;
   line-height: 25px;
   color: $dark-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .contacts__link {
@@ -90,13 +108,23 @@
 
   &:last-child {
     margin-bottom: 42px;
+
+    @media (min-width: $tablet) {
+      width: 211px;
+      margin: 0 auto 23px auto;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 20px auto 23px auto;
+    }
   }
 }
 
 .contacts__text {
   @include wrapper;
   width: 280px;
-  margin-top: 47px;
+  margin-top: 43px;
+  padding-left: 18px;
   font-weight: $special-font-weight;
   font-size: 24px;
   line-height: 120%;
@@ -104,14 +132,16 @@
   color: $dark-color;
 
   @media (min-width: $tablet) {
-    width: 370px;
+    width: 450px;
     font-size: 40px;
     line-height: 54px;
+    padding-left: 16px;
   }
 
   @media (min-width: $desktop) {
-    width: 462px;
-    font-size: 50px;
+    width: 490px;
+    margin-top: 59px;
     line-height: 68px;
+    font-size: 50px;
   }
 }

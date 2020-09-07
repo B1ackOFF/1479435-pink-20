@@ -8,9 +8,9 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="body">
+  <body class="body open-menu">
     <header class="header">
-      <div class="header__background">
+      <div class="header__background header__background--open-menu">
         <nav class="nav">
           <a href="index.html" class="nav__logo" aria-label="Переход на главную страницу">
             <svg class="nav__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -58,54 +58,54 @@
           <fieldset class="competition__fieldset user user--name">
             <legend class="user__legend user__legend--hide">ФИО пользователя</legend>
 
-            <ul class="user__list">
-              <li class="user__item">
+            <ul class="user__list user__list--name">
+              <li class="user__item user__item--name">
                 <label class="user__label" for="user-surname">Фамилия:</label>
                 <input class="user__input" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию *" required>
               </li>
 
-              <li class="user__item">
+              <li class="user__item user__item--name">
                 <label class="user__label" for="user-name">Имя:</label>
                 <input class="user__input" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя *" required>
               </li>
 
-              <li class="user__item">
+              <li class="user__item user__item--name">
                 <label class="user__label" for="user-patronymic">Отчество:</label>
                 <input class="user__input" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="competition__fieldset trip">
-            <legend class="trip__legend">Ваши безбашенные&nbsp;достижения в путешествии</legend>
+          <fieldset class="competition__fieldset trip trip--progress">
+            <legend class="trip__legend">Ваши&nbsp;безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
 
             <ul class="trip__list trip__list--progress">
-              <li class="trip__item">
+              <li class="trip__item trip__item--progress">
                 <input class="trip__input" id="shark-trip" type="checkbox" name="shark-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="shark-trip">Сделал селфи с акулой</label>
               </li>
 
-              <li class="trip__item">
+              <li class="trip__item trip__item--progress">
                 <input class="trip__input" id="beach-trip" type="checkbox" name="beach-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="beach-trip">Обгорел на пляже</label>
               </li>
 
-              <li class="trip__item">
+              <li class="trip__item trip__item--progress">
                 <input class="trip__input" id="norris-trip" type="checkbox" name="norris-trip">
                 <label class="trip__label trip__label--checkbox" for="norris-trip">Видел Чака Норриса</label>
               </li>
 
-              <li class="trip__item">
+              <li class="trip__item trip__item--progress">
                 <input class="trip__input" id="souvenir-trip" type="checkbox" name="souvenir-trip">
                 <label class="trip__label trip__label--checkbox" for="souvenir-trip">Накупил сувениров</label>
               </li>
 
-              <li class="trip__item">
+              <li class="trip__item trip__item--progress">
                 <input class="trip__input" id="tower-trip" type="checkbox" name="tower-trip" checked>
                 <label class="trip__label trip__label--checkbox" for="tower-trip">Удержал башню</label>
               </li>
 
-              <li class="trip__item">
+              <li class="trip__item trip__item--progress">
                 <input class="trip__input" id="hotel-trip" type="checkbox" name="hotel-trip">
                 <label class="trip__label trip__label--checkbox" for="hotel-trip">Разгромил отель</label>
               </li>
@@ -129,18 +129,18 @@
           </fieldset>
 
           <fieldset class="competition__fieldset trip trip--app">
-            <legend class="trip__legend">С каким приложением путешествовали</legend>
+            <legend class="trip__legend">С каким приложением путешествовали?</legend>
 
-            <ul class="trip__list">
-              <li class="trip__item">
+            <ul class="trip__list trip__list--app">
+              <li class="trip__item trip__item--app">
                 <input class="trip__input" id="version-ios" type="radio" name="app-version" checked>
                 <label class="trip__label trip__label--radio" for="version-ios">Pink для iOS</label>
               </li>
-              <li class="trip__item">
+              <li class="trip__item trip__item--app">
                 <input class="trip__input" id="version-android" type="radio" name="app-version">
                 <label class="trip__label trip__label--radio" for="version-android">Pink на Android</label>
               </li>
-              <li class="trip__item">
+              <li class="trip__item trip__item--app">
                 <input class="trip__input" id="version-windows" type="radio" name="app-version">
                 <label class="trip__label trip__label--radio" for="version-windows">Windows Phone</label>
               </li>
@@ -150,7 +150,7 @@
           <fieldset class="competition__fieldset user user--textarea">
             <legend class="user__legend--texterea">Опишите свои эмоции</legend>
 
-            <div class="user__comment">
+            <div class="user__comment user__comment--textarea">
               <textarea class="user__input user__input--comment" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="30" rows="10"></textarea>
               <label class="user__label user__label--comment" for="user-comment">Опишите свои эмоции</label>
             </div>
