@@ -14,7 +14,6 @@
 
 .user--contact {
   margin-bottom: 42px;
-  padding-left: 13px;
 
   @media (min-width: $tablet) {
     grid-row-start: 3;
@@ -29,8 +28,7 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 0;
-    margin-right: 23px;
+    margin-top: 53px;
     margin-bottom: 54px;
     padding-top: 0;
   }
@@ -41,8 +39,7 @@
 
   @media (min-width: $tablet) {
     display: block;
-    padding-left: 23px;
-    padding-right: 27px;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
@@ -80,22 +77,21 @@
   @media (min-width: $desktop) {
     margin-bottom: 0;
     margin-top: 3px;
-    padding-right: 22px;
+    padding-right: 21px;
   }
 }
 
 .user__list--contact {
   @media (min-width: $tablet) {
-    padding: 0 33px 11px 0;
+    padding: 0 30px 17px 0;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
-    padding: 0 19px 0 5px;
+    padding: 0 0 6px 58px;
   }
 }
 
@@ -109,9 +105,9 @@
 
   @media (min-width: $tablet) {
     margin-right: 20px;
-    padding-top: 7px;
+    padding-top: 10px;
     padding-left: 0;
-    line-height: 59px;
+    line-height: 50px;
   }
 }
 
@@ -120,12 +116,13 @@
   width: 277px;
   min-height: 63px;
   margin-top: 4px;
+  padding: 13px 0 0 19px;
   font-family: $main-font;
   border: 2px solid $light-color-2;
   border-radius: 2px;
 
+
   &::placeholder {
-    padding-left: 17px;
     font-family: $main-font;
     font-size: 18px;
     line-height: 30px;
@@ -167,14 +164,14 @@
   z-index: 0;
 
   @media (min-width: $tablet) {
-    padding-left: 44px;
+    padding-left: 58px;
     padding-right: 28px;
     margin: 0;
 
     &::before {
       content: "";
       position: absolute;
-      top: 4px;
+      top: 6px;
       right: 30px;
       width: 59px;
       height: 59px;
@@ -188,9 +185,13 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 15px;
+    margin-top: 18px;
     padding-left: 0;
     padding-right: 0;
+
+    &:first-child {
+      margin-right: 77px;
+    }
 
     &::before {
       top: 12px;
@@ -206,7 +207,7 @@
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    padding-bottom: 7px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop) {
@@ -244,8 +245,8 @@
   @media (min-width: $tablet) {
     order: -1;
     width: 100%;
-    margin-top: 2px;
-    padding-top: 8px;
+    margin-top: 4px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop) {
@@ -265,19 +266,15 @@
     margin-bottom: 48px;
   }
 }
-/*
-.user__item--name .user__input {
-  width: 100%;
-}
-*/
+
 .user__input--comment {
-  width: 276px;
-  min-height: 201px;
+  width: 280px;
+  height: 201px;
   resize: none;
   outline: none;
-  margin-top: 9px;
+  margin-top: 11px;
   padding-top: 13px;
-  padding-left: 9px;
+  padding-left: 19px;
 
   &:hover {
     border: 2px solid $dark-color;
@@ -296,9 +293,10 @@
 
   @media (min-width: $tablet) {
     min-width: 500px;
-    min-height: 192px;
-    margin: 31px 16px 11px 0;
-    padding-left: 8px;
+    height: 194px;
+    margin: 32px auto 11px auto;
+    padding-top: 15px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -313,7 +311,6 @@
 .user__label--comment {
   order: -1;
   padding: 0;
-  padding-left: 5px;
 
   @media (min-width: $tablet) {
     @include visually-hidden;
@@ -328,22 +325,23 @@
 }
 
 .user__comment--textarea {
+  margin: 0 auto;
   margin-bottom: 47px;
-  padding-left: 12px;
+
 
   @media (min-width: $tablet) {
-    margin-bottom: 32px;
+    margin-bottom: 6px;
   }
 
-  @media (min-width: $tablet) {
-    margin: 0;
+  @media (min-width: $desktop) {
+    margin: 0 auto;
   }
 }
 
 .user--name {
   border: none;
   margin-bottom: 12px;
-  padding: 6px 0 0 14px;
+  padding: 6px 0 0 0;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -354,12 +352,12 @@
 }
 
 .user--textarea {
-  margin-top: 8px;
+  margin-top: 7px;
 
   @media (min-width: $tablet) {
     grid-row-start: 5;
     grid-row-end: 6;
-    margin-top: 55px;
+    margin-top: 50px;
     padding-bottom: 34px;
   }
 
@@ -369,7 +367,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 52px;
-    margin-right: 23px;
     padding-bottom: 0;
   }
 }
@@ -379,8 +376,7 @@
 
   @media (min-width: $tablet) {
     visibility: visible;
-    padding-left: 30px;
-    padding-right: 33px;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;

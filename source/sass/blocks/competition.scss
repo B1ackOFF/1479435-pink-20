@@ -7,11 +7,6 @@
   @media (min-width: $tablet) {
     text-align: center;
   }
-
-  @media (min-width: $desktop) {
-    max-width: 1003px;
-    padding-left: 41px;
-  }
 }
 
 .competition__form {
@@ -20,7 +15,7 @@
     grid-template-rows: min-content min-content min-content min-content min-content;
     column-gap: 40px;
     padding-left: 20px;
-    padding-right: 2px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -34,7 +29,6 @@
 
 .competition__description {
   margin: 44px auto 30px auto;
-  padding-left: 15px;
   max-width: 290px;
   font-size: 14px;
   line-height: 30px;
@@ -44,7 +38,6 @@
 
   @media (min-width: $tablet) {
     max-width: 550px;
-    padding-left: 20px;
     margin: 90px auto 62px auto;
     font-size: 18px;
   }
@@ -53,7 +46,8 @@
     display: inline-block;
     margin: 91px auto 72px auto;
     max-width: 850px;
-    padding-right: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 18px;
   }
 }
@@ -95,11 +89,11 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    margin: 27px 1px 29px 0;
+    margin: 28px 1px 29px 0;
   }
 
   @media (min-width: $desktop) {
-    margin: 27px 23px 0 0;
+    margin: 27px 0 0 0;
   }
 }
 
@@ -118,7 +112,6 @@
 
 .competition__footer {
   padding-top: 1px;
-  padding-left: 16px;
 
   @media (min-width: $tablet) {
     display: flex;

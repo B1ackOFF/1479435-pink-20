@@ -10,9 +10,8 @@
 }
 
 .upload__wrapper {
-  max-width: 297px;
+  max-width: 280px;
   margin: 20px auto 0 auto;
-  padding-left: 17px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -41,7 +40,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 7px 0 0 29px;
+    margin: 9px 0 0 14px;
   }
 }
 

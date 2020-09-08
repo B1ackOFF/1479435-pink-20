@@ -21,6 +21,7 @@
 
   @media (min-width: $desktop) {
     min-width: 233px;
+    height: 94px;
   }
 }
 
@@ -48,7 +49,8 @@
   color: $background-color-2;
 
   @media (min-width: $tablet) {
-    margin-bottom: 4px;
+    margin-bottom: 11px;
+    line-height: 22px;
   }
 
   @media (min-width: $desktop) {

@@ -1,7 +1,7 @@
 .price {
   grid-row-start: 4;
   grid-row-end: 5;
-  padding: 125px 0 39px;
+  padding: 129px 0 43px;
   font-size: 14px;
   line-height: 30px;
   color: $dark-color;
@@ -25,19 +25,19 @@
 }
 
 .price__table {
-  width: calc(315% - 120px);
-  margin-top: 8px;
+  width: calc(300% - 124px);
+  margin-top: 7px;
   transform: translateX(calc(-33.333333% + 20px));
 
   @media (min-width: $tablet) {
-    margin: 107px 0 68px 17px;
-    width: 97%;
+    margin: 112px 20px 67px 20px;
+    width: 94%;
     max-width: 940px;
     transform: translateX(0);
   }
 
   @media (min-width: $desktop) {
-    margin: 153px 0 94px 17px;
+    margin: 156px 0 97px 0;
     width: 100%;
   }
 }
