@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    min-width: 620px;
     min-height: 127px;
     margin: 0 auto;
   }
@@ -20,7 +21,7 @@
 }
 
 .footer__logo {
-  margin-top: 28px;
+  margin: 28px auto 0 auto;
 
   @media (min-width: $tablet) {
     width: 165px;
@@ -32,7 +33,7 @@
     padding-right: 16px;
   }
 }
-
+/*
 .footer__logo-image {
   display: block;
   width: 100%;
@@ -58,7 +59,7 @@
     padding-right: 0;
   }
 }
-
+*/
 .footer__list {
   display: block;
   width: 100%;

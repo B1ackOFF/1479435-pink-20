@@ -116,7 +116,7 @@
   width: 277px;
   min-height: 63px;
   margin-top: 4px;
-  padding: 13px 0 0 19px;
+  padding: 3px 0 0 19px;
   font-family: $main-font;
   border: 2px solid $light-color-2;
   border-radius: 2px;
@@ -246,7 +246,7 @@
     order: -1;
     width: 100%;
     margin-top: 4px;
-    padding-top: 15px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop) {
@@ -274,7 +274,7 @@
   outline: none;
   margin-top: 11px;
   padding-top: 13px;
-  padding-left: 19px;
+  padding-left: 8px;
 
   &:hover {
     border: 2px solid $dark-color;
@@ -295,8 +295,8 @@
     min-width: 500px;
     height: 194px;
     margin: 32px auto 11px auto;
-    padding-top: 15px;
-    padding-left: 20px;
+    padding-top: 13px;
+    padding-left: 8px;
   }
 
   @media (min-width: $desktop) {
@@ -352,13 +352,13 @@
 }
 
 .user--textarea {
-  margin-top: 7px;
+  margin-top: 31px;
 
   @media (min-width: $tablet) {
     grid-row-start: 5;
     grid-row-end: 6;
-    margin-top: 50px;
-    padding-bottom: 34px;
+    margin-top: 52px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop) {

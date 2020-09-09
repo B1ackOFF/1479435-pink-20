@@ -1,14 +1,16 @@
 .scale__range {
   appearance: none;
   width: 240px;
-  height: 2px;
-  border: 2px solid $dark-color;
+  height: 1px;
+  margin-top: 6px;
+  border: 1px solid $dark-color;
   color: $link-color;
   outline: none;
   display: none;
 
   @media (min-width: $tablet) {
     display: block;
+    margin-top: 0;
     width: 202px;
   }
 

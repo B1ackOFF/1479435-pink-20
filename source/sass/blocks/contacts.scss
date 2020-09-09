@@ -114,15 +114,15 @@
   }
 
   &:last-child {
-    margin-bottom: 42px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet) {
       width: 211px;
-      margin: 0 auto 23px auto;
+      margin: 0 auto 20px auto;
     }
 
     @media (min-width: $desktop) {
-      margin: 20px auto 23px auto;
+      margin: 20px auto 14px auto;
     }
   }
 }

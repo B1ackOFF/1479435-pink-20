@@ -115,11 +115,6 @@
   }
 }
 
-.tariffs__rows:nth-child(2) .tariffs__text {
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
 .tariffs__text {
   display: inline-block;
   margin: 13px 0;
@@ -155,9 +150,16 @@
 }
 
 .tariffs__text--first-column {
+  display: inline-block;
+  background-color:none;
   margin: 0;
+  padding: 0;
   padding-left: 15px;
   min-height: 45px;
+
+  @media (min-width: $tablet) {
+    line-height: 45px;
+  }
 
   @media (min-width: $desktop) {
     padding-left: 21px;

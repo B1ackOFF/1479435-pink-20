@@ -9,6 +9,7 @@
   color: $background-color-2;
 
   @media (min-width: $tablet) {
+    align-items: flex-start;
     min-height: 110px;
     max-width: 940px;
     margin: 0 auto;
@@ -34,7 +35,7 @@
     z-index: 1;
   }
 }
-
+/*
 .nav__logo {
   align-items: end;
   display: block;
@@ -59,13 +60,13 @@
   @media (min-width: $desktop) {
     margin-bottom: 0;
   }
-}
-
+}*/
+/*
 .nav__logo-image {
   width: 74px;
   height: 23px;
 }
-
+*/
 .nav__toggle {
   position: relative;
   width: 50px;

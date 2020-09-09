@@ -58,10 +58,12 @@
 
   @media (min-width: $tablet) {
     display: block;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
     display: inline-block;
+    padding: 0;
   }
 }
 
@@ -89,7 +91,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    margin: 28px 1px 29px 0;
+    margin: 26px 1px 29px 0;
   }
 
   @media (min-width: $desktop) {
