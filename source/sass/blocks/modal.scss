@@ -1,8 +1,9 @@
 .modal {
   position: fixed;
-  top: 20%;
+  top: 0;
   right: 0;
   left: 0;
+  transform: translateY(50%);
   width: 320px;
   margin: 0 auto;
   padding-top: 40px;
@@ -15,39 +16,89 @@
   background-color: $background-color-2;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-  &--error {
-    display: none;
-    padding-right: 12px;
-    padding-left: 12px;
+  @media (min-width: $tablet) {
+    width: 460px;
+    min-height: 363px;
   }
 
-  &--sent {
-    display: none;
-    top: 60%;
-    padding-right: 12px;
-    padding-left: 12px;
-    background-image: linear-gradient(to bottom, $background-color-2 55%, $light-color 55%);
+  @media (min-width: $desktop) {
+    width: 780px;
+    height: 377px;
+    background-image: linear-gradient(to bottom, $background-color-2 57%, $light-color 57%);
+  }
+}
+
+.modal--error {
+  display: none;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.modal--sent {
+  display: none;
+  padding-top: 37px;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-image: linear-gradient(to bottom, $background-color-2 56.5%, $light-color 56.5%);
+
+  @media (min-width: $tablet) {
+    padding-top: 19px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, $background-color-2 60%, $light-color 60%);
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 44px;
+    background-image: linear-gradient(to bottom, $background-color-2 58%, $light-color 58%);
   }
 }
 
 .modal__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-size: 18px;
   color: $background-color-1;
+
+  @media (min-width: $tablet) {
+    padding: 0 90px;
+    font-weight: $additional-font-weight;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__description {
   margin: 0;
   margin-bottom: 40px;
 
-  &--sent {
-    padding-right: 14px;
-    padding-left: 14px;
-    margin-bottom: 80px;
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+    padding: 0 60px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 112px;
+    padding: 0 180px;
   }
 }
 
+.modal__description--sent {
+  margin-bottom: 84px;
+  padding: 0 15px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 88px;
+    padding: 0 180px;
+  }
+}
+
+
 .modal__button {
   margin-bottom: 52px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
 }

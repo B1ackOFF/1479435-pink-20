@@ -23,8 +23,8 @@
   line-height: 30px;
   color: $dark-color;
   text-align: center;
-  padding-left: 36px;
-  padding-right: 20px;
+  padding-left: 22px;
+  padding-right: 22px;
 
   @media (min-width: $tablet) {
     margin-top: 90px;
@@ -37,7 +37,7 @@
     margin-bottom: 90px;
     font-size: 18px;
     max-width: 740px;
-    padding-left: 55px;
+    padding-left: 40px;
     padding-right: 40px;
   }
 }
@@ -75,18 +75,16 @@
 }
 
 .photo__wrapper {
-  max-width: 297px;
+  max-width: 280px;
   margin: 20px auto 0 auto;
-  padding-left: 17px;
 
   @media (min-width: $tablet) {
-    max-width: 638px;
-    padding-left: 17px;
-    margin: 16px auto 0 auto;
+    max-width: 620px;
+    margin: 50px auto 0 auto;
   }
 
   @media (min-width: $desktop) {
-    max-width: 956px;
+    max-width: 940px;
     margin: 49px auto 0 auto;
   }
 }

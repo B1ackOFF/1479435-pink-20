@@ -62,14 +62,12 @@
 
 .reviews__autor {
   position: relative;
-  padding-left: 16px;
   font-weight: $additional-font-weight;
   font-style: normal;
   line-height: 30px;
 
   @media (min-width: $tablet) {
-    padding-top: 18px;
-    padding-left: 9px;
+    padding-top: 16px;
     order: 2;
     font-size: 20px;
   }
@@ -99,7 +97,6 @@
 .reviews__text {
   position: relative;
   margin-top: 7px;
-  margin-left: 8px;
   padding-top: 6px;
   width: 100%;
   font-size: 14px;
