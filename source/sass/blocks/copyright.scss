@@ -40,15 +40,15 @@
 }
 
 .copyright__logo-image {
-  & path {
-    fill: $link-color;
-  }
 
-  &:hover path {
+  fill: $link-color;
+
+
+  &:hover {
     fill: $background-color-1;
   }
 
-  &:active path {
+  &:active {
     fill: $background-color-1;
     opacity: 0.3;
   }
