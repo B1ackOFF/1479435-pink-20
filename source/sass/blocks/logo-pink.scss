@@ -1,0 +1,109 @@
+.logo-pink--header {
+  height: 23px;
+  margin-bottom: 24px;
+  margin-left: 20px;
+  text-align: center;
+  z-index: 1;
+
+  &:hover[href] .logo-pink__svg,
+  &:focus[href] .logo-pink__svg {
+    fill: $link-color;
+  }
+
+  &:active[href] .logo-pink__svg {
+    fill: $background-color-2;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    height: 40px;
+    margin: 7px 0 0 19px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 18px 0;
+  }
+}
+
+.logo-pink__svg {
+  width: 75px;
+  height: 23px;
+  fill: $background-color-2;
+
+  &--text {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--glasses {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--glasses-decore {
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
+  }
+}
+
+.logo-pink--footer {
+  margin-bottom: 36px;
+  fill: $dark-color;
+
+  &:hover {
+    fill: $link-color;
+  }
+
+  &:active {
+    fill: $dark-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 62px 0 0 0;
+    padding: 0;
+  }
+}
+
+.logo-pink__svg-footer {
+  &--glasses {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--glasses-decore {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+}

@@ -36,10 +36,7 @@
 
   @media (min-width: $tablet) {
     opacity: 1;
-
-    & path {
-      fill: $link-color;
-    }
+    fill: $link-color;
   }
 }
 
@@ -58,8 +55,5 @@
 
 .tools__item--active .tools__icon {
   opacity: 1;
-
-  & path {
-    fill: $link-color;
-  }
+  fill: $link-color;
 }
