@@ -29,6 +29,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -70,10 +71,10 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
   .pipe(imagemin([
   imagemin.optipng({optimizationLevel: 3}),
-  imagemin.jpegtran({progressive: true}),
+  imagemin.mozjpeg({ progressive: true }),
   imagemin.svgo()
-  ]))
- }
+  ]));
+ };
 
 exports.images = images;
 
@@ -108,7 +109,7 @@ exports.html = html;
 
 //build
 
-const build = gulp.series(clean, copy, styles, sprite, html);
+const build = gulp.series(clean, copy, styles, images, createWebp, sprite, html);
 exports.build = build;
 
 // Server
