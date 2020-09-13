@@ -4,6 +4,7 @@
   margin-left: 20px;
   text-align: center;
   z-index: 1;
+  outline: none;
 
   &:hover[href] .logo-pink__svg,
   &:focus[href] .logo-pink__svg {
@@ -17,7 +18,7 @@
 
   @media (min-width: $tablet) {
     height: 40px;
-    margin: 7px 0 0 19px;
+    margin: 7px 0 42px 19px;
   }
 
   @media (min-width: $desktop) {
@@ -68,8 +69,10 @@
 .logo-pink--footer {
   margin-bottom: 36px;
   fill: $dark-color;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $link-color;
   }
 

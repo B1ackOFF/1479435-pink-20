@@ -29,6 +29,7 @@
 
 .copyright__link {
   padding-top: 5px;
+  outline: none;
 
   @media (min-width: $tablet) {
     padding-top: 7px;
@@ -37,12 +38,14 @@
   @media (min-width: $desktop) {
     padding-top: 11px;
   }
+
+  &:focus .copyright__logo-image {
+    fill: $background-color-1;
+  }
 }
 
 .copyright__logo-image {
-
   fill: $link-color;
-
 
   &:hover {
     fill: $background-color-1;
