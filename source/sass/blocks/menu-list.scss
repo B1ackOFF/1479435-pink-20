@@ -6,7 +6,6 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    gap: 79px;
     border-bottom: none;
     background-color: transparent;
     box-shadow: none;
@@ -25,9 +24,14 @@
 
   @media (min-width: $desktop) {
     padding-left: 0;
+    margin-right: 79px;
     line-height: 18px;
     background-color: transparent;
     box-shadow: none;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
   }
 }
 

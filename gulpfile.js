@@ -11,7 +11,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const htmlmin = require('gulp-htmlmin');
+const htmlmin = require("gulp-htmlmin");
 
 // Clean
 
@@ -119,7 +119,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

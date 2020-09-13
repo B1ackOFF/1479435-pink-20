@@ -12,7 +12,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 56px;
+    padding-top: 72px;
+    margin-bottom: 6px;
   }
 }
 
@@ -32,7 +33,7 @@
 
 .reviews__item--active {
   display: block;
-  margin: 22px auto 0 auto;
+  margin: 0 auto 0 auto;
   text-align: center;
   width: 280px;
 
@@ -47,16 +48,19 @@
 
 .reviews__blockquote {
   margin: 0;
+  padding-top: 22px;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-top: 23px
   }
 
   @media (min-width: $desktop) {
-    min-height: 292px;
     justify-content: flex-end;
+    min-height: 292px;
+    padding-top: 100px;
   }
 }
 
@@ -112,7 +116,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -110%;
+      top: -105px;
       left: 44%;
       width: 79px;
       height: 63px;

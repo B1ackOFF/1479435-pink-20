@@ -1,5 +1,6 @@
 .tools {
   @media (min-width: $tablet) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -7,7 +8,21 @@
     padding-left: 20px;
     min-width: 275px;
     min-height: 74px;
-    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: -16px;
+      width: 275px;
+      height: 1px;
+      background-color: $dark-color;
+      opacity: 0.1;
+    }
+
+    &:last-child::before {
+      bottom: 6px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -16,8 +31,14 @@
     padding-bottom: 16px;
     padding-left: 22px;
 
-    &:last-child {
-      border: none;
+    &::before {
+      bottom: 9px;
+      right: -23px;
+      width: 410px;
+    }
+
+    &:last-child::before {
+      display: none;
     }
   }
 }
@@ -56,4 +77,16 @@
 .tools__item--active .tools__icon {
   opacity: 1;
   fill: $link-color;
+}
+
+.tools:first-child .tools__item {
+  margin-top: 4px;
+}
+
+.tools:nth-child(2) .tools__item {
+  margin-top: 8px;
+}
+
+.tools:nth-child(3) .tools__scale {
+  margin-bottom: 8px;
 }

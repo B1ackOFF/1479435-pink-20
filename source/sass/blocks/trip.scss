@@ -226,8 +226,8 @@
   &::before {
     content: "";
     position: absolute;
+    top: -5px;
     left: -59px;
-    bottom: -4px;
     width: 39px;
     height: 39px;
     background-color: $background-color-2;

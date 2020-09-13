@@ -116,17 +116,19 @@
   width: 277px;
   min-height: 63px;
   margin-top: 4px;
-  padding: 3px 0 0 19px;
+  padding: 3px 19px 0 19px;
   font-family: $main-font;
+  font-size: 18px;
+
+  color: $dark-color;
   border: 2px solid $light-color-2;
   border-radius: 2px;
 
 
   &::placeholder {
     font-family: $main-font;
-    font-size: 18px;
-    line-height: 30px;
     color: $dark-color;
+    opacity: 1;
   }
 
   &:hover {
@@ -189,7 +191,7 @@
     padding-left: 0;
     padding-right: 0;
 
-    &:first-child {
+    &:nth-child(2n-1) {
       margin-right: 77px;
     }
 
@@ -234,7 +236,7 @@
 }
 
 
-.user__item--contact:last-child {
+.user__item--contact:nth-child(2) {
   &::before {
     background-image: url("../img/icon-mail-pink.svg");
     background-size: 18px 13px;
@@ -274,7 +276,8 @@
   outline: none;
   margin-top: 11px;
   padding-top: 13px;
-  padding-left: 8px;
+  padding-left: 20px;
+  padding-right: 3px;
 
   &:hover {
     border: 2px solid $dark-color;
@@ -285,7 +288,7 @@
   }
 
   &::placeholder {
-    padding: 0 12px;
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
     color: $dark-color;
@@ -296,7 +299,7 @@
     height: 194px;
     margin: 32px auto 11px auto;
     padding-top: 13px;
-    padding-left: 8px;
+    padding-left: 21px;
   }
 
   @media (min-width: $desktop) {
@@ -385,6 +388,10 @@
 }
 
 .user__input--contact {
+  @media (min-width: $tablet) {
+    padding-right: 60px;
+  }
+
   @media (min-width: $desktop) {
     min-width: 371px;
   }

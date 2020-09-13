@@ -96,11 +96,21 @@
 }
 
 .contacts__link {
+  margin-bottom: 31px;
   font-weight: $special-font-weight;
   font-size: 24px;
   font-style: normal;
   line-height: 33px;
   color: $link-color;
+
+  @media (min-width: $tablet) {
+    width: 211px;
+    margin: 0 auto 20px auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 20px auto 14px auto;
+  }
 
   &:hover,
   &:focus {
@@ -112,18 +122,23 @@
     color: $dark-color;
     opacity: 0.3;
   }
+}
 
-  &:last-child {
-    margin-bottom: 31px;
+.contacts__address {
+  margin-bottom: 31px;
+  font-weight: $special-font-weight;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 33px;
+  color: $link-color;
 
-    @media (min-width: $tablet) {
-      width: 211px;
-      margin: 0 auto 20px auto;
-    }
+  @media (min-width: $tablet) {
+    width: 211px;
+    margin: 0 auto 20px auto;
+  }
 
-    @media (min-width: $desktop) {
-      margin: 20px auto 14px auto;
-    }
+  @media (min-width: $desktop) {
+    margin: 20px auto 14px auto;
   }
 }
 
