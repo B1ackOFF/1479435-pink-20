@@ -33,33 +33,7 @@
     padding-right: 16px;
   }
 }
-/*
-.footer__logo-image {
-  display: block;
-  width: 100%;
-  text-align: center;
 
-  &:hover path {
-    fill: $link-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:active .footer__logo-pink path {
-    fill: $dark-color;
-  }
-
-  @media (min-width: $tablet) {
-    padding-right: 20px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-right: 0;
-  }
-}
-*/
 .footer__list {
   display: block;
   width: 100%;
@@ -75,10 +49,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  @media (min-width: $tablet) {
-    //width: 33%;
-  }
 }
 
 .footer--photo {

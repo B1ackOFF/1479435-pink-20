@@ -50,6 +50,12 @@
       padding-top: 62px;
     }
   }
+
+  &:last-child {
+    @media (min-width: $tablet) {
+      max-width: 500px;
+    }
+  }
 }
 
 .info__list {
@@ -228,14 +234,14 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: calc(0% - 42px);
+    bottom: -5%;
     left: calc(50% - 78.5px);
     width: 157px;
     height: 320px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 157px 320px;
+    background-size: 157px 315px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-mobile@2x.png");

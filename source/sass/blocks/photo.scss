@@ -88,3 +88,31 @@
     margin: 49px auto 0 auto;
   }
 }
+
+.photo__text-bottom {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  margin-top: 23px;
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  white-space: pre-line;
+  color: $dark-color;
+  background-color: $background-color-2;
+
+  @media (min-width: $tablet) {
+    width: 440px;
+    margin-top: 65px;
+    margin-bottom: 69px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 3px;
+    margin-bottom: 67px;
+  }
+}

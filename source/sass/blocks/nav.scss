@@ -35,38 +35,7 @@
     z-index: 1;
   }
 }
-/*
-.nav__logo {
-  align-items: end;
-  display: block;
-  margin-bottom: 19px;
-  padding-left: 20px;
-  outline: none;
-  z-index: 1;
 
-  &:hover .nav__logo-image path,
-  &:focus .nav__logo-image path {
-    fill: $link-color;
-  }
-
-  &:active .nav__logo-image path {
-    fill: $background-color-2-opacity;
-  }
-
-  @media (min-width: $tablet) {
-    margin-bottom: 59px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 0;
-  }
-}*/
-/*
-.nav__logo-image {
-  width: 74px;
-  height: 23px;
-}
-*/
 .nav__toggle {
   position: relative;
   width: 50px;
@@ -138,4 +107,8 @@
   &::before {
     width: 0;
   }
+}
+
+.nav__toggle--no-js {
+  display: none;
 }
